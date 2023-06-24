@@ -1,22 +1,18 @@
 <script setup lang="ts">
 	import TheHeader from "./components/layout/TheHeader.vue";
+	import TheFooter from "./components/layout/TheFooter.vue";
 </script>
 
 <template>
 	<div class="app-container">
 		<TheHeader />
 		<!-- <RouterView></RouterView> -->
-		<!-- <TheFooter /> -->
+		<TheFooter />
 	</div>
 </template>
 
 <style lang="scss">
-@import './styles/variables.scss';
 
-body {
-	margin: 0;
-	box-sizing: border-box;
-}
 .app-container {
 	background-color: $black;
 	min-height: 100vh;

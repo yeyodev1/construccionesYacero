@@ -1,16 +1,25 @@
 <script setup lang="ts">
-	import HelloWorld from "./components/HelloWorld.vue";
 	import TheHeader from "./components/layout/TheHeader.vue";
 </script>
 
 <template>
-	<div>
+	<div class="app-container">
 		<TheHeader />
+		<!-- <RouterView></RouterView> -->
+		<!-- <TheFooter /> -->
 	</div>
 </template>
 
-<style>
-	body {
-		margin: 0;
-	}
+<style lang="scss">
+@import './styles/variables.scss';
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+.app-container {
+	background-color: $black;
+	min-height: 100vh;
+	width: 100%;
+}
 </style>

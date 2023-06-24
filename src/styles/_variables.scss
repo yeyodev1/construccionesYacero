@@ -1,0 +1,15 @@
+// colors 
+@import './colorVariables.scss';
+
+// typography
+@import './externalVariables'; 
+$font: 'Montserrat', sans-serif;
+
+* {
+  margin: 0;
+	box-sizing: border-box;
+}
+
+p {
+  color: $white;
+}

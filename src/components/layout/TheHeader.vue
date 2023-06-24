@@ -41,6 +41,7 @@ const buttons = [
 	.header {
 		padding: 12px 24px;
 		display: flex;
+		width: 100%;
 		justify-content: space-between;
 		align-items: center;
 		max-width: $desktop-upper-breakpoint;

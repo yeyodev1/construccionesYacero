@@ -6,7 +6,9 @@
 <template>
 	<div class="app-container">
 		<TheHeader />
-		<!-- <RouterView></RouterView> -->
+		<div class="app-container-view">
+			<!-- <RouterView></RouterView> -->
+		</div>
 		<TheFooter />
 	</div>
 </template>
@@ -17,5 +19,10 @@
 	background-color: $black;
 	min-height: 100vh;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	&-view{
+		flex: 1;
+	}
 }
 </style>

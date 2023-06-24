@@ -38,7 +38,6 @@ const buttons = [
 </template>
 
 <style lang="scss" scoped>
-	@import "/src/styles/variables.scss";
 	.header {
 		padding: 12px 24px;
 		display: flex;

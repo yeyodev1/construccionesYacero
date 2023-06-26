@@ -7,7 +7,7 @@
 	<div class="app-container">
 		<TheHeader />
 		<div class="app-container-view">
-			<!-- <RouterView></RouterView> -->
+			<RouterView></RouterView>
 		</div>
 		<TheFooter />
 	</div>

@@ -13,7 +13,8 @@
     "@nabux-crush/crush-alert": "^0.0.16",
     "@nabux-crush/crush-button": "^1.0.32",
     "@nabux-crush/crush-styles": "^0.0.21",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

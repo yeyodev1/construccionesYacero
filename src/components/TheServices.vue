@@ -62,7 +62,7 @@ import ServicesContent from '@/components/services.content.vue'
     }
     justify-content: space-around;
     align-items: center;
-    
+    margin-bottom: 40px;
     &-p{
       font-size: 1rem;
       margin-bottom: 24px;

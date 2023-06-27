@@ -1,15 +1,5 @@
 <script setup lang="ts">
-
-const images = [
-  {
-    src: 'https://i.pinimg.com/564x/69/a3/6b/69a36be4b8b05c2471d672b995cf1c09.jpg',
-    description: 'Hombres contruyendo una casa hermosa'
-  },
-  {
-    src: 'https://i.pinimg.com/564x/69/a3/6b/69a36be4b8b05c2471d672b995cf1c09.jpg',
-    description: 'Hombres contruyendo una casa hermosa'
-  },
-]
+import ServicesContent from '@/components/services.content.vue'
 
 </script>
 
@@ -41,6 +31,7 @@ const images = [
         >
       </div>
     </div>
+    <ServicesContent />
   </div>
 </template>
 
@@ -77,6 +68,7 @@ const images = [
       margin-bottom: 24px;
       @media (min-width: $tablet-lower-breakpoint) {
         max-width: 40%;
+        font-size: 20px;
       }
     }
     &-container {

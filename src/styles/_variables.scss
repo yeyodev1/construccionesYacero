@@ -5,6 +5,11 @@
 @import './externalVariables'; 
 $font: 'Montserrat', sans-serif;
 
+// font sizes 
+$size: 1rem;
+$sizeLarge: 1.5rem;
+$sizeExtraLarge: 4rem; 
+
 * {
   margin: 0;
 	box-sizing: border-box;

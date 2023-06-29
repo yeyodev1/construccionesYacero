@@ -37,9 +37,6 @@ const projects = [
 .container {
   padding: 20px;
   margin-bottom: 40px;
-  @media (min-width: $tablet-lower-breakpoint) {
-    margin-bottom: 80px;
-  }
   &-h3 {
     font-family: $font;
     color: $white;

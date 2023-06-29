@@ -16,11 +16,13 @@ const props = defineProps({
   >
     <h1 class="container-title">¿{{detail.title}} <span>{{ detail.word }}</span>?</h1>
     <p class="container-p">{{ detail.description }}</p>
-    <CrushButton 
-      class="container-button"
-      variant="primary"
-      :text="detail.button"
-    />
+    <router-link to="/contact">
+      <CrushButton 
+        class="container-button"
+        variant="primary"
+        :text="detail.button"
+      />
+    </router-link>
   </div>
 </template>
 

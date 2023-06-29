@@ -33,7 +33,7 @@ const props = defineProps({
   align-items: center;
   margin-bottom: 40px;
   @media (min-width: $tablet-lower-breakpoint) {
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
   &-title {
     color: $white;

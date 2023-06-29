@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import CallToAction from '@/components/CallToAction.vue';
 import OurProjects from '@/pages/Home/components/OurProjects.vue';
 import TheHero from '@/pages/Home/components/TheHero.vue';
@@ -12,6 +12,14 @@ const details = [
     button: 'cotizar proyecto'
   }
 ]
+const details2 = [
+  {
+    title: 'Nos ponemos en',
+    word: 'contacto',
+    description: 'Cotiza tu proyecto o pongámonos en contacto, nos encantaría conversar contigo y hacer tu proyecto realidad.',
+    button: 'Conversemos'
+  }
+]
 </script>
 
 <template>
@@ -20,6 +28,7 @@ const details = [
     <TheServices/>
     <CallToAction :details="details" />
     <OurProjects/>
+    <CallToAction :details="details2" />
   </div>
 </template>
 

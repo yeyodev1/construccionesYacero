@@ -13,9 +13,9 @@ const details = [
 
 <template>
   <div class="container">
-    <h2 class="container-h2">nosotros <span>somos</span></h2>
     <div class="container-section">
       <div class="container-section-details">
+        <h2 class="container-section-details-h2">nosotros <span>somos</span></h2>
         <h4 class="container-section-details-h4">Lorem ipsum dolor sit amet.</h4>
         <p class="container-section-details-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore olor sit amet, consectetur adipiscing elit, sed do eiusmod temolor sit amet, consectetur adipiscing elit, sed do eiusmod tem </p>
       </div>  
@@ -46,22 +46,8 @@ const details = [
   display: flex;
   flex-direction: column;
   gap: 12px;
-  &-h2 {
-    font-size: $font;
-    text-transform: uppercase;
-    color: $white;
-    font-size: $sizeLarge;
-    font-weight: 500;
-    hyphens: auto;
-    word-break: break-word;
-    margin-bottom: 48px;
-    @media (min-width: $tablet-lower-breakpoint) {
-      font-size: $sizeExtraLarge;
-      margin: 76px 0;
-    } 
-    & span {
-      color: $yellow;
-    }
+  @media(min-width: $desktop-lower-breakpoint) {
+    margin-top: 40px;
   }
   &-section {
     max-width: $desktop-upper-breakpoint;
@@ -82,6 +68,22 @@ const details = [
       flex-direction: column;
       gap: 12px;
       padding: 12px;
+      &-h2 {
+        font-size: $font;
+        text-transform: uppercase;
+        color: $white;
+        font-size: $sizeLarge;
+        font-weight: 500;
+        hyphens: auto;
+        word-break: break-word;
+        margin-bottom: 36px;
+        @media (min-width: $tablet-lower-breakpoint) {
+          font-size: $sizeExtraLarge;
+        } 
+        & span {
+          color: $yellow;
+        }
+      }
       &-p {
         font-size: $size;
         @media(min-width: $tablet-lower-breakpoint) {
@@ -105,6 +107,9 @@ const details = [
       width: 100%;
       @media (min-width: $tablet-lower-breakpoint) {
         height: 264px;
+      }
+      @media (min-width: $desktop-lower-breakpoint) {
+        height: 412px;
       }
     }
   }

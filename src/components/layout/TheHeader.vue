@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import CrushButton from '@nabux-crush/crush-button';
+import TheMenu from "./TheMenu.vue"
+import useMenuStore from '@/store/MenuStore';
+import { computed } from 'vue';
+
+const menuStore = useMenuStore()
 
 const buttons = [
   {
@@ -23,6 +28,10 @@ const scrollToServices = () => {
 	}
 }
 
+function toggleMenu() {
+	menuStore.toggleMenu();
+}
+
 </script>
 
 <template>
@@ -36,7 +45,9 @@ const scrollToServices = () => {
 				alt="construcciones y acero"
 				class="header-container-image" />
 		</router-link>
-		<button class="header-button">
+		<button
+			class="header-button"
+			@click="toggleMenu">
 			<i class="fa-solid fa-bars" />
 		</button>
 		<div class="header-details">
@@ -49,6 +60,7 @@ const scrollToServices = () => {
 		</div>
 	</div> 
 </template>
+
 
 <style lang="scss" scoped>
 	.header {

@@ -5,8 +5,8 @@ import CrushButton from '@nabux-crush/crush-button';
 
 const buttons = [
   {
-    name: 'Proyectos',
-    link: '/',
+    name: 'Nosotros',
+    link: '/about',
   },
   {
     name: 'Contacto',

@@ -13,7 +13,7 @@ const projects = [
     image: '/src/assets/projects/sala.png'
   },
   {
-    image: '/src/assets/services/galpon.png'
+    image: '/src/assets/galpon.png'
   },
 ]
 </script>

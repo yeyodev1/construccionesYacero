@@ -4,7 +4,8 @@ import ServicesContent from '@/pages/Home/components/services.content.vue';
 </script>
 
 <template>
-  <div class="section">
+  <div 
+    class="section">
     <p class="section-title-p">
         Construcciones y <span>acero</span>
     </p>

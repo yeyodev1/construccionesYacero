@@ -7,7 +7,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component:  TheHome
+    component: TheHome,
   },
   {
     path: '/about',
@@ -18,12 +18,13 @@ const routes: Array<RouteRecordRaw> = [
     path: '/contact',
     name: 'Contact',
     component: TheForm
-  }
-]
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(), 
   routes
-})
+});
 
-export default router
+
+export default router;

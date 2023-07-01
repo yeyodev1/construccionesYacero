@@ -1,27 +1,27 @@
 <script setup lang="ts">
 const services = [
   {
-    src: '/src/assets/galpon.png',
+    src: '/src/assets/services/galpon.png',
     service: 'Estructuras'
   },
   {
-    src: '/src/assets/terraza.png',
+    src: '/src/assets/services/terraza.png',
     service: 'Construcciones'
   },
   {
-    src: '/src/assets/baño.png',
+    src: '/src/assets/services/baño.png',
     service: 'Remodelaciones'
   },
   {
-    src: '/src/assets/planos.png',
+    src: '/src/assets/services/planos.png',
     service: 'Planos'
   },
   {
-    src: '/src/assets/asesoria.png',
+    src: '/src/assets/services/asesoria.png',
     service: 'Asesoría'
   },
   {
-    src: '/src/assets/permisosdeconstruccion.png',
+    src: '/src/assets/services/permisosdeconstruccion.png',
     service: 'Permisos de construcción'
   },
 ]

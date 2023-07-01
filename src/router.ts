@@ -1,20 +1,23 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import TheHome from './pages/Home/TheHome.vue';
+import TheForm from './pages/Contact/TheForm.vue';
+import TheAbout from './pages/About/TheAbout.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: () => import ('./pages/Home/TheHome.vue')
+    component:  TheHome
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import ('./pages/About/TheAbout.vue')
+    component: TheAbout
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import ('./pages/Contact/TheForm.vue')
+    component: TheForm
   }
 ]
 

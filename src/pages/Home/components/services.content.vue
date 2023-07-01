@@ -28,7 +28,7 @@ const services = [
 </script>
 
 <template>
-  <div class="section-content">
+  <div class="section-content" id="services">
     <p class="section-content-p">
       Nuestros <br> <span>servicios</span>
     </p>

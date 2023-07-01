@@ -3,7 +3,6 @@ import useMenuStore from '@/store/MenuStore';
 import CrushButton from '@nabux-crush/crush-button';
 
 
-
 const buttons = [
   {
     name: 'Proyectos',

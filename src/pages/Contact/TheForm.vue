@@ -16,19 +16,19 @@ const form = reactive({
 const rules = {
   validateName: [
     {
-      validate: value => value.length >= 10,
+      validate: (value: string) => value.length >= 10,
       message: 'Por favor Coloca tu nombre completo'
     }
   ],
   validateNumber: [
     {
-      validate: value => value.length >= 10,
+      validate: (value: string) => value.length >= 10,
       message: 'Por favor número completo tu número completo'
     }
   ],
   validateEmail: [
     {
-      validate: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+      validate: (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
       message: 'Por favor, ingresa un correo válido'
     }
   ]

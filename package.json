@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "postcss": "^8.4.24",
     "sass": "^1.63.4",
     "sass-loader": "^13.3.2",
     "typescript": "^5.0.2",

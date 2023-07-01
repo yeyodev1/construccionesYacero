@@ -1,19 +1,19 @@
 <script setup>
 const projects = [
   {
-    image: '/src/assets/projects/casa.png'
+    image: '/src/assets/services/projects/casa.png'
   },
   {
-    image: '/src/assets/projects/bathroom.png'
+    image: '/src/assets/services/projects/bathroom.png'
   },
   {
-    image: '/src/assets/projects/casota.png'
+    image: '/src/assets/services/projects/casota.png'
   },
   {
-    image: '/src/assets/projects/sala.png'
+    image: '/src/assets/services/projects/sala.png'
   },
   {
-    image: '/src/assets/galpon.png'
+    image: '/src/assets/services/galpon.png'
   },
 ]
 </script>

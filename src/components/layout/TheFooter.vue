@@ -25,9 +25,9 @@ const contacts = [
     text: '099 909 7965'
   },
   {
-    link: 'tel:+593999097965',
+    link: '/',
     iconClass: '<i class="fa-solid fa-envelope" />',
-    text: '099 909 7965'
+    text: 'robmoncayo62@gmail.com'
   }
 ]
 const services = [

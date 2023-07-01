@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import {computed, reactive, ref} from 'vue'
+import { computed, reactive, ref } from 'vue'
+import emailjs from 'emailjs-com';
 import CrushButton from '@nabux-crush/crush-button';
 import CrushTextField from '@nabux-crush/crush-text-field';
 import CrushTextArea from '@nabux-crush/crush-text-area';
@@ -60,6 +61,35 @@ const formIsValid = computed(() => {
     form.message !== ''
   )
 })
+
+
+const resetInputs = () => {
+  form.name = '';
+  form.phone = '';
+  form.email = '';
+  form.message = '';
+}
+
+
+async function sendEmail() {
+  const mail = {
+    from_name: form.name,
+    from_email: form.email,
+    message: form.message
+  }
+  try {
+    await emailjs.send(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      mail,
+      import.meta.env.VITE_PUBLIC_KEY,
+    );
+    alert('correo enviado');
+    resetInputs();
+  } catch (error) {
+    console.error('CANNOR_SEND_EMAIL', error)
+  }
+}
 
 </script>
 
@@ -129,6 +159,7 @@ const formIsValid = computed(() => {
           variant="primary"
           text="enviar"
           :disabled="!formIsValid"
+          @click.prevent="sendEmail"
         />
       </div>
     </form>

@@ -1,38 +1,51 @@
 <script setup lang="ts">
-import CrushButton from '@nabux-crush/crush-button'
+import CrushButton from '@nabux-crush/crush-button';
+
 const buttons = [
-	{
-		name: 'Servicios',
-		link: '/'
-	},
-	{
-		name: 'Proyectos',
-		link: '/'
-	},
-	{
-		name: 'Contacto',
-		link: '/'
-	},
-	{
-		name: 'Cotizar proyecto',
-		link: '/'
-	},
-]
+  {
+    name: 'Nosotros',
+    link: '/about'
+  },
+  {
+    name: 'Contacto',
+    link: '/contact'
+  },
+  {
+    name: 'Cotizar proyecto',
+    link: 'contact'
+  },
+];
+
+const scrollToServices = () => {
+	const element = document.getElementById('services');
+	if (element) {
+		element.scrollIntoView({behavior: 'smooth'})
+	}
+}
+
 </script>
 
 <template>
 	<div class="header">
-		<img
-			src="@/assets/construccionesyacero-logo.png"
-			alt="construcciones y acero"
-			class="header-image" />
+		<router-link 
+			to="/"
+			class="header-container"
+			>
+			<img
+				src="@/assets/construccionesyacero-logo.png"
+				alt="construcciones y acero"
+				class="header-container-image" />
+		</router-link>
 		<button class="header-button">
 			<i class="fa-solid fa-bars" />
 		</button>
 		<div class="header-details">
-			<a :href="button.link" v-for="(button, index) in buttons" :key="index">
+			<router-link :to="{path: '/', hash: '#services' }" @click="scrollToServices">
+				<CrushButton class="header-details-button" variant="secondary" text="buttoneame varon" />
+			</router-link>
+			<router-link :to="button.link" v-for="(button, index) in buttons" :key="index">
 				<CrushButton class="header-details-button" variant="secondary" :text="button.name" />
-			</a>
+			</router-link>
 		</div>
 	</div> 
 </template>
@@ -46,8 +59,10 @@ const buttons = [
 		align-items: center;
 		max-width: $desktop-upper-breakpoint;
 		margin: 0 auto;
-		&-image {
-			width: 120px;
+		&-container {
+			&-image {
+				width: 120px;
+			}
 		}
 		&-button {
 			background: none;
@@ -70,7 +85,7 @@ const buttons = [
 				border: none;
 				font-family: $font;
 				font-weight: 700;
-				&:active {
+				&:hover {
 					border: none;
 					font-weight: inherit;
 				}
@@ -78,6 +93,10 @@ const buttons = [
 			a:last-child &-button:last-child{
 				background-color: $yellow;
 				color: black;
+				&:hover {
+					background-color: $hover;
+					font-family: $font;
+				}
 			}
 		}
 	}

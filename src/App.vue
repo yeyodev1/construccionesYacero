@@ -1,6 +1,7 @@
 <script setup lang="ts">
-	import TheHeader from "./components/layout/TheHeader.vue";
-	import TheFooter from "./components/layout/TheFooter.vue";
+import TheHeader from "./components/layout/TheHeader.vue";
+import TheFooter from "./components/layout/TheFooter.vue";
+import TheMenu from "./components/layout/TheMenu.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@
 		<div class="app-container-view">
 			<RouterView></RouterView>
 		</div>
+		<TheMenu />
 		<TheFooter />
 	</div>
 </template>

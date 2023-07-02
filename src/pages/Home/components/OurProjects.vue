@@ -31,7 +31,7 @@ const projects = [
       <div 
       class="container-section-images"
       v-for="(project, index) in projects"
-      :key="project"
+      :key="index"
       >
       <img :src="project.image">
     </div>
@@ -41,6 +41,8 @@ const projects = [
 
 <style lang="scss" scoped>
 .container {
+  max-width: $desktop-upper-breakpoint;
+  margin: 0 auto;
   padding: 20px;
   margin-bottom: 40px;
   &-h3 {

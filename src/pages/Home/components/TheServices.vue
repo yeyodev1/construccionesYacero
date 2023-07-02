@@ -40,6 +40,8 @@ import ServicesContent from '@/pages/Home/components/ServicesContent.vue';
 $break-tablet: 820px;
 
 .section {
+  margin: 0 auto;
+  max-width: $desktop-upper-breakpoint;
   padding: 20px;
   @media (min-width: $tablet-lower-breakpoint) {
     flex-direction: row;

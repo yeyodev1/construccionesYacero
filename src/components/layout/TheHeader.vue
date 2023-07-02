@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import CrushButton from '@nabux-crush/crush-button';
 import useMenuStore from '@/store/MenuStore';
-import { computed } from 'vue';
 
 const menuStore = useMenuStore()
 

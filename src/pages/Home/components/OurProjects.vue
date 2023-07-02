@@ -1,19 +1,25 @@
-<script setup>
+<script setup lang="ts">
+import casa from '@/assets/projects/casa.png';
+import bathroom from '@/assets/projects/bathroom.png';
+import casota from '@/assets/projects/casota.png';
+import sala from '@/assets/projects/sala.png';
+import galpon from '@/assets/services/galpon.png';
+
 const projects = [
   {
-    image: '/src/assets/projects/casa.png'
+    image: casa
   },
   {
-    image: '/src/assets/projects/bathroom.png'
+    image: bathroom
   },
   {
-    image: '/src/assets/projects/casota.png'
+    image: casota
   },
   {
-    image: '/src/assets/projects/sala.png'
+    image: sala
   },
   {
-    image: '/src/assets/services/galpon.png'
+    image: galpon
   },
 ]
 </script>

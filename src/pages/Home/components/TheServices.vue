@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ServicesContent from '@/pages/Home/components/services.content.vue';
+import ServicesContent from '@/pages/Home/components/ServicesContent.vue';
 
 </script>
 

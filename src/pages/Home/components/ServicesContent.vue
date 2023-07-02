@@ -1,27 +1,35 @@
 <script setup lang="ts">
+import galpon from '@/assets/services/galpon.png';
+import terraza from '@/assets/services/terraza.png';
+import banio from '@/assets/services/baño.png';
+import planos from '@/assets/services/planos.png';
+import asesoria from '@/assets/services/asesoria.png';
+import permisos from '@/assets/services/permisosdeconstruccion.png';
+
+
 const services = [
   {
-    src: '/src/assets/services/galpon.png',
+    src: galpon,
     service: 'Estructuras'
   },
   {
-    src: '/src/assets/services/terraza.png',
+    src: terraza,
     service: 'Construcciones'
   },
   {
-    src: '/src/assets/services/baño.png',
+    src: banio,
     service: 'Remodelaciones'
   },
   {
-    src: '/src/assets/services/planos.png',
+    src: planos,
     service: 'Planos'
   },
   {
-    src: '/src/assets/services/asesoria.png',
+    src: asesoria,
     service: 'Asesoría'
   },
   {
-    src: '/src/assets/services/permisosdeconstruccion.png',
+    src: permisos,
     service: 'Permisos de construcción'
   },
 ]

@@ -8,11 +8,13 @@ import CrushButton from '@nabux-crush/crush-button'
     <p class="hero-p">
       Hacemos tu proyecto realidad
     </p>
-    <CrushButton
-      class="hero-cta"
-      variant="primary"
-      text="Cotizar proyecto"
-    />
+    <router-link to="/contact">
+      <CrushButton
+        class="hero-cta"
+        variant="primary"
+        text="Cotizar proyecto"
+      />
+    </router-link>
   </div>
 </template>
 
@@ -42,8 +44,8 @@ import CrushButton from '@nabux-crush/crush-button'
     border: none;
     font-family: $font;
     font-size: 1rem;
-    &:active {
-      background-color: $yellow;
+    &:hover {
+      background-color: $hover;
       border: none;
     }
   }

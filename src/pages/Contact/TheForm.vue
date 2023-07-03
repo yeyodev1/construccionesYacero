@@ -81,8 +81,8 @@ async function sendEmail() {
     from_email: form.email,
     message: form.message
   }
-  console.log(mail)
   try {
+    console.log(import.meta.env.VITE_SERVICE_ID)
     await emailjs.send(
       import.meta.env.VITE_SERVICE_ID,
       import.meta.env.VITE_TEMPLATE_ID,

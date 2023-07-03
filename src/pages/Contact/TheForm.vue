@@ -59,6 +59,7 @@ const formIsValid = computed(() => {
     form.phone !== '' &&
     form.email !== '' &&
     form.message !== '' &&
+    selectedOption.value !== '' &&
     rules.validateName.every(rule => rule.validate(form.name)) &&
     rules.validateNumber.every(rule => rule.validate(form.phone)) &&
     rules.validateEmail.every(rule => rule.validate(form.email))

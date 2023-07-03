@@ -199,7 +199,7 @@ async function sendEmail() {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    justify-content: space-around;
+    justify-content: space-between;
     &-form {
       font-family: $font;
       width: 90%;

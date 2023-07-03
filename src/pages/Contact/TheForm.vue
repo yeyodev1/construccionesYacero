@@ -202,7 +202,7 @@ async function sendEmail() {
     justify-content: space-between;
     &-form {
       font-family: $font;
-      width: 90%;
+      width: 100%;
       ::placeholder {
         font-family: $font;
       }
@@ -214,7 +214,7 @@ async function sendEmail() {
       }
     }
     &-label {
-      width: 90%;
+      width: 100%;
       font-weight: bold;
       display: flex;
       flex-direction: column;

@@ -17,13 +17,13 @@ const rules = {
   validateName: [
     {
       validate: (value: string) => value.length >= 10,
-      message: 'Por favor Coloca tu nombre completo'
+      message: 'Por favor, coloca tu nombre completo'
     }
   ],
   validateNumber: [
     {
       validate: (value: string) => value.length >= 10,
-      message: 'Por favor número completo tu número completo'
+      message: 'Por favor, ingresa tu número completo'
     }
   ],
   validateEmail: [

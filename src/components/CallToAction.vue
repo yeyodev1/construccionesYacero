@@ -66,6 +66,9 @@ const props = defineProps({
     background-color: $yellow;
     font-family: $font;
     border: none;
+    &::first-letter {
+      text-transform: uppercase;
+    }
     &:hover{
       background-color: $yellow;
       border: none;

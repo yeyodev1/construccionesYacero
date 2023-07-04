@@ -100,7 +100,7 @@ async function sendEmail() {
 <template>
   <div class="form">
     <h3 class="form-title">¿Nos ponemos en <span>contacto</span>?</h3>
-    <p class="form-p">Cotiza tu proyecto o pongámonos en contacto, nos encantaría conversar contigo y hacer tu proyecto realidad.</p>
+    <p class="form-p">¡Completa el formulario y construyamos juntos tus sueños! En Construcciones y Acero, convertimos tus ideas en realidades estructurales.</p>
     <form class="form-container">
       <CrushTextField
         v-model="form.name"  
@@ -189,7 +189,9 @@ async function sendEmail() {
     }
   }
   &-p {
+    font-size: $font;
     text-align: center;
+    margin: 24px 0;
     @media(min-width: $tablet-lower-breakpoint) {
       font-size: $sizeLarge;
       margin-bottom: 64px;

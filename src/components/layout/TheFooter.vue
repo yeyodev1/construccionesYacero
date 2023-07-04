@@ -1,20 +1,17 @@
 <script setup lang="ts">
 
 const icons = [
+  
   {
-    link: '/',
-    iconClass: '<i class="fa-brands fa-twitter" />'
-  },
-  {
-    link: '/',
+    link: 'https://www.facebook.com/construccionesyacero',
     iconClass: '<i class="fa-brands fa-facebook" />'
   },
   {
-    link: '/',
+    link: 'https://www.instagram.com/construccionesyacero/',
     iconClass: '<i class="fa-brands fa-instagram" />'
   },
   {
-    link: '/',
+    link: 'https://walink.co/8596e5',
     iconClass: '<i class="fa-brands fa-whatsapp"  />'
   },
 ]
@@ -99,7 +96,9 @@ function getYear(): number {
 <style lang="scss" scoped>
 
 .footer {
-  max-width: $desktop-lower-breakpoint;
+  max-width: $desktop-upper-breakpoint;
+  margin: 0 auto;
+  margin-top: 88px;
   padding: 12px 24px;
   display: flex;
   justify-content: space-between;
@@ -109,8 +108,8 @@ function getYear(): number {
   flex-wrap: wrap;
   gap: 16px;
   @media (min-width: $desktop-lower-breakpoint ){
-    max-width: 1376px;
-    justify-content: space-around;
+    margin-top:  124px;
+    justify-content: space-between;
     align-items: center;
   }
   &-first-section {
@@ -128,12 +127,9 @@ function getYear(): number {
       }
       .social-media {
         display: flex;
-        justify-content: flex-start; 
+        justify-content: flex-start;
+        gap: 12px;
         a {
-          &:first-child {
-            padding: 0;
-          }
-          padding: 0 12px;
           text-decoration: none;
           span {
             color: $yellow;

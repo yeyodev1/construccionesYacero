@@ -16,8 +16,8 @@ const details = [
     <div class="container-section">
       <div class="container-section-details">
         <h2 class="container-section-details-h2">nosotros <span>somos</span></h2>
-        <h4 class="container-section-details-h4">Lorem ipsum dolor sit amet.</h4>
-        <p class="container-section-details-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore olor sit amet, consectetur adipiscing elit, sed do eiusmod temolor sit amet, consectetur adipiscing elit, sed do eiusmod tem </p>
+        <h4 class="container-section-details-h4">Construcciones y acero.</h4>
+        <p class="container-section-details-p">Líderes en construcción. Equipo técnico y obrero calificado con experiencia en diseño arquitectónico y cálculos estructurales. Fabricamos estructuras de calidad siguiendo estándares y normas. Seguridad y excelencia en cada proyecto. Confía en nosotros para hacer realidad tus proyectos constructivos.</p>
       </div>  
         <img 
         src="/src/assets/man-in-work.png"
@@ -27,12 +27,12 @@ const details = [
     </div>
     <div class="container-section2">
       <div class="container-section2-details2">
-        <h4 class="container-section2-details2-h4-2">Lorem ipsum dolor sit amet.</h4>
-        <p class="container-section2-details2-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore olor sit amet, consectetur adipiscing elit, sed do eiusmod temolor sit amet, consectetur adipiscing elit, sed do eiusmod tem </p>
+        <h4 class="container-section2-details2-h4-2">Recorrido</h4>
+        <p class="container-section2-details2-p2">Contamos con más de 30 años de experiencia en proyectos, somos tu elección segura. Nuestro compromiso con la excelencia se refleja en cada construcción que realizamos. Confía en nosotros para llevar tus proyectos a un nivel superior</p>
       </div>  
         <img 
         src="/src/assets/man-in-work.png"
-        alt=""
+        alt="" 
         class="container-section2-image2"
         >
     </div>
@@ -116,6 +116,7 @@ const details = [
   &-section2 {
     max-width: $desktop-upper-breakpoint;
     margin: 0 auto;
+    margin-bottom: 72px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,6 +124,7 @@ const details = [
     gap: 12px;
     @media(min-width: $tablet-lower-breakpoint) {
       flex-direction: row-reverse;
+      margin-bottom: 120px;
     }
     &-details2 {
       max-width: $desktop-lower-breakpoint;

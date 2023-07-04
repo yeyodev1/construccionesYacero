@@ -253,8 +253,12 @@ async function sendEmail() {
       margin-bottom: 24px ;
       font-family: $font;
       font-weight: bold;
+      :deep(.crush-textarea-container .textarea){
+        font-family: $font;
+      }
       :deep(.crush-textarea-container.is-focused) {
         border-color: $yellow;
+        font-family: $font;
       }
     }
     &-button {

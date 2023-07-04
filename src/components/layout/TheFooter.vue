@@ -22,9 +22,9 @@ const contacts = [
     text: '099 909 7965'
   },
   {
-    link: 'mailto:robmoncayo62@gmail.com',
+    link: 'mailto:conace1@yahoo.es',
     iconClass: '<i class="fa-solid fa-envelope" />',
-    text: 'robmoncayo62@gmail.com'
+    text: 'conace1@yahoo.es'
   }
 ]
 const services = [

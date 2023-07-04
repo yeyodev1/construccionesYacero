@@ -22,7 +22,7 @@ const contacts = [
     text: '099 909 7965'
   },
   {
-    link: '/',
+    link: 'mailto:robmoncayo62@gmail.com',
     iconClass: '<i class="fa-solid fa-envelope" />',
     text: 'robmoncayo62@gmail.com'
   }

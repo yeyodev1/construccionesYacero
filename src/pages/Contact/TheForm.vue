@@ -153,7 +153,7 @@ async function sendEmail() {
         v-model="form.message"  
         class="form-container-text"
         label="Mensaje" 
-        placeholder="escribe aquí con detalles"
+        placeholder="Escribe aquí con detalles"
         :valid-rules="rules.validateEmail"
       />
       <div class="form-container-button">
@@ -210,6 +210,10 @@ async function sendEmail() {
       }
       :deep(.input-container.active) {
         border-color: $yellow;
+        font-family: $font;
+      }
+      :deep(.input-container .crush-text-field-input) {
+        font-family: $font;
       }
       @media(min-width: $tablet-upper-breakpoint) {
         width: 40%;
@@ -240,12 +244,15 @@ async function sendEmail() {
         .custom-option {
           background: $black;
           color: $white;
+          font-family: $font;
         }
       }
     }
     &-text {
       width: 100%;
       margin-bottom: 24px ;
+      font-family: $font;
+      font-weight: bold;
       :deep(.crush-textarea-container.is-focused) {
         border-color: $yellow;
       }
@@ -258,7 +265,6 @@ async function sendEmail() {
         width: 40%;
         background-color: $gray;
         border: 1px solid $gray;
-        
       }
       .background-validate {
           background-color: $yellow;

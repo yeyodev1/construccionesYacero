@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import casa from '@/assets/projects/comedor.png';
-import bathroom from '@/assets/projects/contenedor.png';
-import casota from '@/assets/projects/fachadaPosterior.png';
-import sala from '@/assets/projects/porton.png';
+import contenedor from '@/assets/projects/contenedor.png';
+import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
+import porton from '@/assets/projects/porton.png';
 import galpon from '@/assets/services/galpon.png';
 
 const projects = [
@@ -10,13 +10,13 @@ const projects = [
     image: casa
   },
   {
-    image: bathroom
+    image: contenedor
   },
   {
-    image: casota
+    image: fachadaPosterior
   },
   {
-    image: sala
+    image: porton
   },
   {
     image: galpon

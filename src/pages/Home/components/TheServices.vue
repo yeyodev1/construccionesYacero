@@ -13,7 +13,7 @@ import ServicesContent from '@/pages/Home/components/ServicesContent.vue';
       <p class="section-detail-p">Somos una empresa líder en el sector de la construcción, especializada en el diseño y fabricación de estructuras arquitectónicas de alta calidad. Contamos con un equipo altamente capacitado, tanto en la oficina como en la planta industrial, que posee una amplia experiencia en la creación de planos y cálculos estructurales precisos.</p>
       <div class="section-detail-container">
         <img 
-        src="https://i.pinimg.com/236x/49/7b/15/497b151425ed398cd0e337244b3db457.jpg" 
+        src="@/assets/projects/baranda.png" 
         alt=""
         class="imagen1"
         >
@@ -23,7 +23,7 @@ import ServicesContent from '@/pages/Home/components/ServicesContent.vue';
         class="imagen2"
         >
         <img 
-        src="https://i.pinimg.com/236x/49/7b/15/497b151425ed398cd0e337244b3db457.jpg" 
+        src="@/assets/projects/casaPlaya.png" 
         alt=""
         class="imagen3"
         >

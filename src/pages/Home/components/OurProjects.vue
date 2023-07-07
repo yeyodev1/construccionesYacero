@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import casa from '@/assets/projects/casa.png';
-import bathroom from '@/assets/projects/bathroom.png';
-import casota from '@/assets/projects/casota.png';
-import sala from '@/assets/projects/sala.png';
+import casa from '@/assets/projects/comedor.png';
+import bathroom from '@/assets/projects/contenedor.png';
+import casota from '@/assets/projects/fachadaPosterior.png';
+import sala from '@/assets/projects/porton.png';
 import galpon from '@/assets/services/galpon.png';
 
 const projects = [

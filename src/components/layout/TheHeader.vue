@@ -50,7 +50,7 @@ function toggleMenu() {
 		</button>
 		<div class="header-details">
 			<router-link :to="{path: '/', hash: '#services' }" @click="scrollToServices">
-				<CrushButton class="header-details-button" variant="secondary" text="servicios" />
+				<CrushButton class="header-details-button" variant="secondary" text="Servicios" />
 			</router-link>
 			<router-link :to="button.link" v-for="(button, index) in buttons" :key="index">
 				<CrushButton class="header-details-button" variant="secondary" :text="button.name" />

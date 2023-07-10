@@ -10,8 +10,13 @@ import ServicesContent from '@/pages/Home/components/ServicesContent.vue';
         Construcciones y <span>acero</span>
     </p>
     <div class="section-detail">
-      <p class="section-detail-p">Somos una empresa líder en el sector de la construcción, especializada en el diseño y fabricación de estructuras arquitectónicas de alta calidad. Contamos con un equipo altamente capacitado, tanto en la oficina como en la planta industrial, que posee una amplia experiencia en la creación de planos y cálculos estructurales precisos.</p>
-      <div class="section-detail-container">
+      <p class="section-detail-p">
+        Somos una empresa líder en el sector de la construcción. <br> * Realizamos diseños arquitectónicos, estructuras, eléctricos y sanitarios. <br>
+        * Cálculos estructurales precisos y fabricación de estructuras de acero. <br>
+        * Contamos con un equipo altamente capacitado y con experiencia. <br>
+        * Creamos proyectos en hormigón, acabados y remodelaciones.
+      </p>
+    <div class="section-detail-container">
         <img 
         src="@/assets/projects/baranda.png" 
         alt=""

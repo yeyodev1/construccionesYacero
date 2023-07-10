@@ -78,7 +78,8 @@ const resetInputs = () => {
 async function sendEmail() {
   const mail = {
     from_name: form.name,
-    from_email: form.email,
+    email: form.email,
+    phoneNumber: form.phone,
     message: form.message
   }
   try {

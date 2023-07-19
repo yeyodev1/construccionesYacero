@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import useProjectStore from '@/store/ProjectStore';
+// import casa from '@/assets/projects/casa.png';
 
 const projectStore = useProjectStore();
+
+
 </script>
 
 <template>
@@ -10,10 +13,11 @@ const projectStore = useProjectStore();
     <div class="container-section">
       <div 
         class="container-section-images"
-        v-for="(project, index) in projectStore.projects"
+        v-for="(project, index) in projectStore.projectsInIndex"
         :key="index">
         <router-link :to="`/projects/${project.id}`">
           <img :src="project.images[0]">
+          <p>{{ project.title }}</p>
         </router-link>
       </div>
     </div>
@@ -39,34 +43,34 @@ const projectStore = useProjectStore();
     }
   }
   &-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 8px;
-    max-width: $desktop-upper-breakpoint;
-    margin: 0 auto;
-    @media (min-width: $tablet-lower-breakpoint) {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-    }
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
     &-images {
       width: 100%;
+      position: relative;
+      @media (min-width: $tablet-lower-breakpoint) {
+        width: 45%;
+      }
       img {
         width: 100%;
-        height: 406px;
-        object-fit: cover;
-        object-position: top center;
+        height: 100%;
+        filter: brightness(0.5)
       }
-      &:nth-child(3) {
-        grid-column: span 2;
-        @media (min-width: $tablet-lower-breakpoint) {
-          grid-column: 3;
-        }
-      }
-      &:nth-child(4) {
-        @media (min-width: $tablet-lower-breakpoint) {
-          grid-column: span 2;
-        }
+      p {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: $sizeLarge;
+        font-weight: 500;
+        background: rgba(200, 225, 225, 0.6);
+        padding: 8px;
+        border-radius: 8px;
       }
     }
   }

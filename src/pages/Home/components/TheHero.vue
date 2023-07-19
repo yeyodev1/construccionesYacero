@@ -22,6 +22,7 @@ import CrushButton from '@nabux-crush/crush-button'
 .hero {
   background-image: url('@/assets/heroImage.png');
   background-position: center;
+  max-width: $desktop-upper-breakpoint;
   background-repeat: no-repeat;
   background-size: cover;
   object-position: top center;
@@ -30,6 +31,7 @@ import CrushButton from '@nabux-crush/crush-button'
   flex-direction: column;
   align-items: start;
   justify-content: end;
+  margin: 0 auto;
   &-p {
     text-transform: uppercase;
     font-size: 1.5rem;

@@ -98,7 +98,7 @@ onMounted(() => {
       @media(min-width: $tablet-lower-breakpoint) {
         max-width: 45%;
       }
-      height: 406px;
+      height: 250px;
       object-fit: cover;
       object-position: top center;
     }
@@ -125,7 +125,7 @@ onMounted(() => {
       @media(min-width: $tablet-lower-breakpoint) {
         max-width: 45%;
       }
-      height: 406px;
+      height: 250px;
       object-fit: cover;
       object-position: top center;
     }

@@ -1,32 +1,14 @@
 <script setup lang="ts">
-import casa from '@/assets/projects/comedor.png';
-import contenedor from '@/assets/projects/contenedor.png';
-import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
-import porton from '@/assets/projects/porton.png';
-import galpon from '@/assets/services/galpon.png';
+import useProjectStore from '@/store/ProjectStore';
 
-const projects = [
-  {
-    image: casa,
-    name: 'casa'
-  },
-  {
-    image: contenedor,
-    name: 'contenedor'
-  },
-  {
-    image: fachadaPosterior,
-    name: 'fachada'
-  },
-  {
-    image: porton,
-    name: 'porton'
-  },
-  {
-    image: galpon,
-    name: 'galpon'
-  },
-]
+const projectStore = useProjectStore();
+// import casa from '@/assets/projects/comedor.png';
+// import contenedor from '@/assets/projects/contenedor.png';
+// import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
+// import porton from '@/assets/projects/porton.png';
+// import galpon from '@/assets/services/galpon.png';
+
+
 </script>
 
 <template>
@@ -35,9 +17,9 @@ const projects = [
     <div class="container-section">
       <div 
         class="container-section-images"
-        v-for="(project, index) in projects"
+        v-for="(project, index) in projectStore.projects"
         :key="index">
-        <router-link :to="`/projects/${project.name}`">
+        <router-link :to="`/projects/${project.id}`">
           <img :src="project.image">
         </router-link>
       </div>

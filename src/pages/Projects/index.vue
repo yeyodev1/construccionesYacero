@@ -19,6 +19,7 @@ const projectStore = useProjectStore();
           class="super-container-project-img"
           :src="project.images[0]" 
           :alt="project.title">
+          <p>{{ project.title }}</p>
       </router-link>
     </div>
     </div>
@@ -47,6 +48,7 @@ const projectStore = useProjectStore();
     justify-content: center;
     &-project {
       width: 100%;
+      position: relative;
       @media(min-width: $mobile-upper-breakpoint) {
         width: 45%;
         height: 400px;
@@ -56,6 +58,19 @@ const projectStore = useProjectStore();
         height: 100%;
         object-fit: cover;
         object-position: top center;
+        filter: brightness(0.5)
+      }
+      p {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: $sizeLarge;
+        font-weight: 500;
+        background: rgba(200, 225, 225, 0.6);
+        padding: 8px;
+        border-radius: 8px;
       }
     }
   }

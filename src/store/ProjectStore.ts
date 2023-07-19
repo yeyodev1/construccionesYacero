@@ -1,11 +1,13 @@
 import { defineStore } from 'pinia';
 
 import type { Project } from '@/typings/Project';
-import casa from '@/assets/projects/casa.png';
+
 import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
 import casaPlaya from '@/assets/projects/casaPlaya.png';
+import casa from '@/assets/projects/casa.png';
+
+import contenedor from '@/assets/projects/contenedor.png';
 import porton from '@/assets/projects/porton.png';
-import comedor from '@/assets/projects/comedor.png';
 import galpon from '@/assets/services/galpon.png';
 
 interface RootState {
@@ -31,8 +33,8 @@ export const useProjectStore = defineStore('useProjectStore', {
       {
         images: [
           galpon,
-          comedor,
-          porton
+          porton,
+          contenedor
         ],
         title: 'Estrucuras de edificios y galpones',
         description: [

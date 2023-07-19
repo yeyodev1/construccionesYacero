@@ -1,33 +1,50 @@
+<script setup lang="ts">
+import { onMounted, ref } from 'vue';
+
+import useProjectStore from '@/store/ProjectStore';
+import type { Project } from '@/typings/Project';
+import { useRoute } from 'vue-router';
+
+const projectStore = useProjectStore();
+const route = useRoute();
+const projectSelected = ref<Project>();
+
+onMounted(() => {
+  projectSelected.value = projectStore.projects.find(project => project.id === route.params.projectId);
+})
+</script>
+
+
 <template>
   <div class="container">
     <p class="container-title">
-      Titulo del proyecto
+      {{ projectSelected?.title }}
     </p>
     <div class="container-section">
       <img 
         class="container-section-img"
-        src="https://i.pinimg.com/236x/01/92/02/0192026d11ae05f24f44622bc8dda9ae.jpg" 
-        alt=""
+        :src="projectSelected?.image" 
+        :alt="projectSelected?.title"
         >
     </div>
     <div class="container-section2">
       <p class="container-section2-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore unde laudantium suscipit qui perspiciatis laboriosam necessitatibus possimus odio illo itaque! Quaerat magni ut vel tempore maiores non odit porro reprehenderit.
+        {{ projectSelected?.description  }}
       </p>
       <img 
         class="container-section2-img"
-        src="https://i.pinimg.com/236x/01/92/02/0192026d11ae05f24f44622bc8dda9ae.jpg" 
-        alt=""
+        :src="projectSelected?.image" 
+        :alt="projectSelected?.title"
         >
     </div>
     <div class="container-section3">
       <p class="container-section3-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore unde laudantium suscipit qui perspiciatis laboriosam necessitatibus possimus odio illo itaque! Quaerat magni ut vel tempore maiores non odit porro reprehenderit.
+        {{ projectSelected?.description }}
       </p>
       <img 
         class="container-section3-img"
-        src="https://i.pinimg.com/236x/01/92/02/0192026d11ae05f24f44622bc8dda9ae.jpg" 
-        alt=""
+        :src="projectSelected?.image" 
+        :alt="projectSelected?.title"
         >
     </div>
   </div>

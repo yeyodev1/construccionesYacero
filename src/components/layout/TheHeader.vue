@@ -91,7 +91,6 @@ function toggleMenu() {
 			display: none;
 			@media (min-width: $tablet-upper-breakpoint) {
 				display: flex;
-				width: 70%;
 				justify-content: space-between;
 				align-items: center;
 			}

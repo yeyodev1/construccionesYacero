@@ -36,7 +36,7 @@ export const useProjectStore = defineStore('useProjectStore', {
           porton,
           contenedor
         ],
-        title: 'Estrucuras de edificios y galpones',
+        title: 'Estructuras de edificios y galpones',
         description: [
           'Nuestra empresa de construcción se especializa en la construcción de comedores. Tenemos una amplia experiencia en el diseño y la construcción de comedores de todos los tamaños y presupuestos. Podemos construir un comedor que se adapte a las necesidades específicas de su empresa.',
           'Nuestros portones están diseñados para ser duraderos, seguros y atractivos. Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestros portones sean resistentes a la intemperie y fáciles de mantener.',

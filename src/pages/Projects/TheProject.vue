@@ -23,7 +23,7 @@ onMounted(() => {
     <div class="container-section">
       <img 
         class="container-section-img"
-        :src="projectSelected?.image" 
+        :src="projectSelected?.images[0]" 
         :alt="projectSelected?.title"
         >
     </div>
@@ -33,7 +33,7 @@ onMounted(() => {
       </p>
       <img 
         class="container-section2-img"
-        :src="projectSelected?.image" 
+        :src="projectSelected?.images[1]" 
         :alt="projectSelected?.title"
         >
     </div>
@@ -43,7 +43,7 @@ onMounted(() => {
       </p>
       <img 
         class="container-section3-img"
-        :src="projectSelected?.image" 
+        :src="projectSelected?.images[2]" 
         :alt="projectSelected?.title"
         >
     </div>

@@ -2,13 +2,6 @@
 import useProjectStore from '@/store/ProjectStore';
 
 const projectStore = useProjectStore();
-// import casa from '@/assets/projects/comedor.png';
-// import contenedor from '@/assets/projects/contenedor.png';
-// import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
-// import porton from '@/assets/projects/porton.png';
-// import galpon from '@/assets/services/galpon.png';
-
-
 </script>
 
 <template>
@@ -20,7 +13,7 @@ const projectStore = useProjectStore();
         v-for="(project, index) in projectStore.projects"
         :key="index">
         <router-link :to="`/projects/${project.id}`">
-          <img :src="project.image">
+          <img :src="project.images[0]">
         </router-link>
       </div>
     </div>

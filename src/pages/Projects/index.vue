@@ -17,7 +17,7 @@ const projectStore = useProjectStore();
       <router-link :to="`/projects/${project.id}`">
         <img 
           class="super-container-project-img"
-          :src="project.image" 
+          :src="project.images[0]" 
           :alt="project.title">
       </router-link>
     </div>

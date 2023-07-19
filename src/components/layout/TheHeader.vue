@@ -10,6 +10,10 @@ const buttons = [
     link: '/about'
   },
   {
+    name: 'Proyectos',
+    link: '/projects'
+  },
+  {
     name: 'Contacto',
     link: '/contact'
   },

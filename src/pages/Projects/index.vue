@@ -29,7 +29,7 @@ const projects = [
       class="super-container-project"
       v-for="(project, index) in projects"
       :key="index">
-      <router-link to="/">
+      <router-link :to="`/projects/${project.name}`">
         <img 
           class="super-container-project-img"
           :src="project.image" 

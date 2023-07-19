@@ -37,7 +37,7 @@ const projects = [
         class="container-section-images"
         v-for="(project, index) in projects"
         :key="index">
-        <router-link :to="`/project/${project.name}`">
+        <router-link :to="`/projects/${project.name}`">
           <img :src="project.image">
         </router-link>
       </div>

@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import TheHome from './pages/Home/TheHome.vue';
 import TheForm from './pages/Contact/TheForm.vue';
 import TheAbout from './pages/About/TheAbout.vue';
-import TheProject from './pages/Project/TheProject.vue';
+import TheProjects from './pages/Projects/index.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -21,9 +21,9 @@ const routes: Array<RouteRecordRaw> = [
     component: TheForm
   },
   {
-    path: '/project/:project',
-    name: 'Project',
-    component: TheProject
+    path: '/projects/:projectId',
+    name: 'ProjectsPage',
+    component: () => import('@/pages/Projects/TheProject.vue')
   },
 ];
 

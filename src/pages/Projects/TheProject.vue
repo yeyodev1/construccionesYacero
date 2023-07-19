@@ -10,7 +10,7 @@ const route = useRoute();
 const projectSelected = ref<Project>();
 
 onMounted(() => {
-  projectSelected.value = projectStore.projectsInIndex.find(project => project.id === route.params.projectId);
+  projectSelected.value = projectStore.projects.find(project => project.id === route.params.projectId);
 })
 </script>
 

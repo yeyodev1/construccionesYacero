@@ -1,14 +1,15 @@
 import { defineStore } from 'pinia';
 
 import type { Project } from '@/typings/Project';
-// import casa from '@/assets/projects/comedor.png';
-// import contenedor from '@/assets/projects/contenedor.png';
-// import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
-// import porton from '@/assets/projects/porton.png';
-// import galpon from '@/assets/services/galpon.png';
+import casa from '@/assets/projects/casa.png';
+import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
+import casaPlaya from '@/assets/projects/casaPlaya.png';
+import porton from '@/assets/projects/porton.png';
+import comedor from '@/assets/projects/comedor.png';
+import galpon from '@/assets/services/galpon.png';
 
 interface RootState {
-  projects: Project[]
+  projects: Project[],
 }
 
 export const useProjectStore = defineStore('useProjectStore', {
@@ -16,55 +17,29 @@ export const useProjectStore = defineStore('useProjectStore', {
     projects: [
       {
         images: [
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
+          casa,
+          fachadaPosterior,
+          casaPlaya,
         ],
-        title: 'Super titulo de la muerte 0',
+        title: 'Proyectos de viviendas',
         description: [
-          'Esta es una super descripcion de la muerte en la que tenemos un string largo',
-          'Esta es una super descripcion de la muerte en la que tenemos un string corto',
+          'Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestras casas sean duraderas y atractivas. También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
+          'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
-        id: '23412'
+        id: '1-houses'
       },
       {
         images: [
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
+          galpon,
+          comedor,
+          porton
         ],
-        title: 'Super titulo de la muerte 1',
+        title: 'Estrucuras de edificios y galpones',
         description: [
-          'Esta es una super descripcion de la muerte en la que tenemos un string largo',
-          'Esta es una super descripcion de la muerte en la que tenemos un string corto',
+          'Nuestra empresa de construcción se especializa en la construcción de comedores. Tenemos una amplia experiencia en el diseño y la construcción de comedores de todos los tamaños y presupuestos. Podemos construir un comedor que se adapte a las necesidades específicas de su empresa.',
+          'Nuestros portones están diseñados para ser duraderos, seguros y atractivos. Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestros portones sean resistentes a la intemperie y fáciles de mantener.',
         ],
-        id: '234123'
-      },
-      {
-        images: [
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-        ],
-        title: 'Super titulo de la muerte 2',
-        description: [
-          'Esta es una super descripcion de la muerte en la que tenemos un string largo',
-          'Esta es una super descripcion de la muerte en la que tenemos un string corto',
-        ],
-        id: '23414'
-      },
-      {
-        images: [
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-          'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-        ],
-        title: 'Super titulo de la muerte 3',
-        description: [
-          'Esta es una super descripcion de la muerte en la que tenemos un string largo',
-          'Esta es una super descripcion de la muerte en la que tenemos un string corto',
-        ],
-        id: '23415'
+        id: '2-structures'
       },
     ]
   }),

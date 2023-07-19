@@ -13,7 +13,7 @@ const projectStore = useProjectStore();
     <div class="container-section">
       <div 
         class="container-section-images"
-        v-for="(project, index) in projectStore.projectsInIndex"
+        v-for="(project, index) in projectStore.projects"
         :key="index">
         <router-link :to="`/projects/${project.id}`">
           <img :src="project.images[0]">

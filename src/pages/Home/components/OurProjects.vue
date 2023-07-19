@@ -7,19 +7,24 @@ import galpon from '@/assets/services/galpon.png';
 
 const projects = [
   {
-    image: casa
+    image: casa,
+    name: 'casa'
   },
   {
-    image: contenedor
+    image: contenedor,
+    name: 'contenedor'
   },
   {
-    image: fachadaPosterior
+    image: fachadaPosterior,
+    name: 'fachada'
   },
   {
-    image: porton
+    image: porton,
+    name: 'porton'
   },
   {
-    image: galpon
+    image: galpon,
+    name: 'galpon'
   },
 ]
 </script>
@@ -29,12 +34,13 @@ const projects = [
     <h3 class="container-h3">Nuestro <span class="container-h3-span">proyectos</span></h3>
     <div class="container-section">
       <div 
-      class="container-section-images"
-      v-for="(project, index) in projects"
-      :key="index"
-      >
-      <img :src="project.image">
-    </div>
+        class="container-section-images"
+        v-for="(project, index) in projects"
+        :key="index">
+        <router-link :to="`/project/${project.name}`">
+          <img :src="project.image">
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

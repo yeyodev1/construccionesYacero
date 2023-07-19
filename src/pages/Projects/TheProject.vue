@@ -10,7 +10,7 @@ const route = useRoute();
 const projectSelected = ref<Project>();
 
 onMounted(() => {
-  projectSelected.value = projectStore.projects.find(project => project.id === route.params.projectId);
+  projectSelected.value = projectStore.projectsInIndex.find(project => project.id === route.params.projectId);
 })
 </script>
 
@@ -29,7 +29,7 @@ onMounted(() => {
     </div>
     <div class="container-section2">
       <p class="container-section2-description">
-        {{ projectSelected?.description  }}
+        {{ projectSelected?.description[0]  }}
       </p>
       <img 
         class="container-section2-img"
@@ -39,7 +39,7 @@ onMounted(() => {
     </div>
     <div class="container-section3">
       <p class="container-section3-description">
-        {{ projectSelected?.description }}
+        {{ projectSelected?.description[1] }}
       </p>
       <img 
         class="container-section3-img"

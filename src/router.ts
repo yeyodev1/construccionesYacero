@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHistory, RouteRecordRaw, onBeforeRouteUpdate } from 'vue-router';
 import TheHome from './pages/Home/TheHome.vue';
 import TheForm from './pages/Contact/TheForm.vue';
 import TheAbout from './pages/About/TheAbout.vue';
@@ -34,7 +34,14 @@ const routes: Array<RouteRecordRaw> = [
 
 const router = createRouter({
   history: createWebHistory(), 
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({top: 0})
+      }, 0)
+    })
+  }
 });
 
 

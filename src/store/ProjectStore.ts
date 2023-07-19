@@ -12,6 +12,8 @@ import galpon from '@/assets/services/galpon.png';
 
 interface RootState {
   projects: Project[],
+  services: Service[],
+  services2: Service[],
 }
 
 export const useProjectStore = defineStore('useProjectStore', {
@@ -42,6 +44,40 @@ export const useProjectStore = defineStore('useProjectStore', {
           'Nuestros portones están diseñados para ser duraderos, seguros y atractivos. Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestros portones sean resistentes a la intemperie y fáciles de mantener.',
         ],
         id: '2-structures'
+      },
+    ],
+    services: [
+      {
+        service: 'Instalaciones Sanitarias'
+      },
+      {
+        service: 'Acabados finales'
+      },
+      {
+        service: 'Cimentaciones'
+      },
+      {
+        service: 'Empacadoras'
+      },
+      {
+        service: 'Paredes'
+      },
+    ],
+    services2: [
+      {
+        service: 'Sistemas contra incendio'
+      },
+      {
+        service: 'Estaciones de bombeo'
+      },
+      {
+        service: 'Retocamiento'
+      },
+      {
+        service: 'Vivienda'
+      },
+      {
+        service: 'Cisternas'
       },
     ]
   }),

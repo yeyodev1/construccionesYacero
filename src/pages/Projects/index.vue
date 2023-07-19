@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ListServices from '@/components/ListServices.vue';
 import useProjectStore from '@/store/ProjectStore';
 
 const projectStore = useProjectStore();
@@ -11,9 +12,9 @@ const projectStore = useProjectStore();
     </p>
     <div class="super-container">
       <div
-      class="super-container-project"
-      v-for="(project, index) in projectStore.projects"
-      :key="index">
+        class="super-container-project"
+        v-for="(project, index) in projectStore.projects"
+        :key="index">
       <router-link :to="`/projects/${project.id}`">
         <img 
           class="super-container-project-img"
@@ -21,6 +22,12 @@ const projectStore = useProjectStore();
           :alt="project.title">
           <p>{{ project.title }}</p>
       </router-link>
+    </div>
+    <div class="container-services">
+      <p>
+        Nuestros <span> servicios </span> 
+      </p>
+      <ListServices />
     </div>
     </div>
   </div>
@@ -38,6 +45,17 @@ const projectStore = useProjectStore();
     color: $white;
     span {
       color: $yellow;
+    }
+  }
+  &-services {
+    width: 100%;
+    p {
+      text-align: center;
+      font-size: $h2-font-size;
+      margin-bottom: 36px;
+      span {
+        color: $yellow;
+      }
     }
   }
   .super-container {

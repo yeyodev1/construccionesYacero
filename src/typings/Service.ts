@@ -1,0 +1,3 @@
+interface Service {
+  service: string,
+}

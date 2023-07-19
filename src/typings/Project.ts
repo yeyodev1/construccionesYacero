@@ -1,7 +1,7 @@
 interface Project {
-  image: string,
+  images: string[],
   id: string,
-  description: string,
+  description: string[],
   title: string
 }
 

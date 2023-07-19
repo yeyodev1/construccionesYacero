@@ -21,8 +21,13 @@ const routes: Array<RouteRecordRaw> = [
     component: TheForm
   },
   {
+    path: '/projects',
+    name: 'Projects',
+    component: TheProjects
+  },
+  {
     path: '/projects/:projectId',
-    name: 'ProjectsPage',
+    name: 'Projects Detail',
     component: () => import('@/pages/Projects/TheProject.vue')
   },
 ];

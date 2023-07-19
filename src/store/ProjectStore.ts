@@ -1,5 +1,11 @@
 import { defineStore } from 'pinia';
+
 import type { Project } from '@/typings/Project';
+// import casa from '@/assets/projects/comedor.png';
+// import contenedor from '@/assets/projects/contenedor.png';
+// import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
+// import porton from '@/assets/projects/porton.png';
+// import galpon from '@/assets/services/galpon.png';
 
 interface RootState {
   projects: Project[]

@@ -1,22 +1,7 @@
-<script setup>
-const projects = [
-  {
-    image: 'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-    name: 'hola'
-  },
-  {
-    image: 'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-    name: 'hola'
-  },
-  {
-    image: 'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-    name: 'hola'
-  },
-  {
-    image: 'https://i.pinimg.com/236x/b6/28/c6/b628c6c21875d3b4e27472e86049f5e5.jpg',
-    name: 'hola'
-  },
-]
+<script setup lang="ts">
+import useProjectStore from '@/store/ProjectStore';
+
+const projectStore = useProjectStore();
 </script>
 
 <template>
@@ -27,13 +12,13 @@ const projects = [
     <div class="super-container">
       <div
       class="super-container-project"
-      v-for="(project, index) in projects"
+      v-for="(project, index) in projectStore.projects"
       :key="index">
-      <router-link :to="`/projects/${project.name}`">
+      <router-link :to="`/projects/${project.id}`">
         <img 
           class="super-container-project-img"
           :src="project.image" 
-          :alt="project.name">
+          :alt="project.title">
       </router-link>
     </div>
     </div>

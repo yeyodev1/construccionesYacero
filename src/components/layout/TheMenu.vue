@@ -13,6 +13,10 @@ const buttons = [
     link: '/contact',
   },
   {
+    name: 'Proyectos',
+    link: '/projects',
+  },
+  {
     name: 'Cotizar Proyecto',
     link: '/contact',
   },

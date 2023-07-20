@@ -74,10 +74,10 @@ export const useProjectStore = defineStore('useProjectStore', {
         service: 'Retocamiento'
       },
       {
-        service: 'Vivienda'
+        service: 'Cisternas'
       },
       {
-        service: 'Cisternas'
+        service: 'Vivienda'
       },
     ]
   }),

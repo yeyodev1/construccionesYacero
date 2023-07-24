@@ -164,6 +164,9 @@ function getYear(): number {
   }
   &-third-section {
     margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     &-p {
       color: $yellow;
       font-size: 1rem;

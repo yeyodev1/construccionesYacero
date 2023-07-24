@@ -97,7 +97,7 @@ function toggleMenu() {
 				font-weight: 700;
 				&:hover {
 					border: none;
-					font-weight: inherit;
+					font-weight: 700;
 				}
 			}
 			a:last-child &-button:last-child{
@@ -106,6 +106,7 @@ function toggleMenu() {
 				&:hover {
 					background-color: $hover;
 					font-family: $font;
+					font-weight: 700;
 				}
 			}
 		}

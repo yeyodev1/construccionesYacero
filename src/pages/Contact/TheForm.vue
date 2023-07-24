@@ -162,7 +162,7 @@ async function sendEmail() {
           class="button"
           :class="{'background-validate' : formIsValid}"
           variant="primary"
-          text="enviar"
+          text="Enviar"
           :disabled="!formIsValid"
           @click.prevent="sendEmail"
         />

@@ -4,6 +4,7 @@ import { onMounted, ref } from 'vue';
 import useProjectStore from '@/store/ProjectStore';
 import type { Project } from '@/typings/Project';
 import { useRoute } from 'vue-router';
+import CallToAction from '@/components/CallToAction.vue';
 
 const projectStore = useProjectStore();
 const route = useRoute();
@@ -12,131 +13,68 @@ const projectSelected = ref<Project>();
 onMounted(() => {
   projectSelected.value = projectStore.projects.find(project => project.id === route.params.projectId);
 })
-</script>
 
+const details = [
+  {
+    title: 'Nos ponemos en',
+    word: 'contacto',
+    description: 'En Construcciones y Acero, estamos listos para escuchar tus necesidades y brindarte soluciones a medida. Nuestro equipo técnico altamente capacitado y nuestro compromiso con la calidad nos distinguen. Juntos, haremos realidad tus proyectos constructivos.',
+    button: 'Conversemos'
+  }
+]
+</script>
 
 <template>
   <div class="container">
-    <p class="container-title">
-      {{ projectSelected?.title }}
-    </p>
-    <div class="container-section">
-      <img 
-        class="container-section-img"
-        :src="projectSelected?.images[0]" 
-        :alt="projectSelected?.title"
-        >
-    </div>
-    <div class="container-section2">
-      <p class="container-section2-description">
-        {{ projectSelected?.description[0]  }}
+    <div class="container-box">
+      <p class="container-box-title">
+        {{ projectSelected?.title }}
       </p>
-      <img 
-        class="container-section2-img"
-        :src="projectSelected?.images[1]" 
-        :alt="projectSelected?.title"
-        >
-    </div>
-    <div class="container-section3">
-      <p class="container-section3-description">
-        {{ projectSelected?.description[1] }}
+      <p class="container-box-location">
+        {{ projectSelected?.location }}
       </p>
-      <img 
-        class="container-section3-img"
-        :src="projectSelected?.images[2]" 
-        :alt="projectSelected?.title"
-        >
+      <p class="container-box-description">{{ projectSelected?.description[1] }}</p>
     </div>
+    <img :src="projectSelected?.images[0]" :alt="projectSelected?.title">
   </div>
+  <CallToAction :details="details" />
 </template>
 
 <style lang="scss" scoped>
 .container {
-  padding: 24px;
-  width: 100%;
-  max-width: $desktop-upper-breakpoint;
   margin: 0 auto;
+  max-width: $desktop-lower-breakpoint;
+  padding: 24px;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  @media(min-width: $desktop-lower-breakpoint) {
-    gap: 40px;
-  }
-  &-title {
-    font-size: $h2-font-size;
-    @media (min-width: $desktop-lower-breakpoint) {
-      font-size: $h1-font-size;
-    }
-  }
-  &-section {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  gap: 5%;
+  &-box {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    &-img {
-      height: 144px;
-      width: 100%;
-      height: 108px;
-      object-fit: cover;
-      @media (min-width: $tablet-lower-breakpoint) {
-        height: 200px;
-      }
-      @media (min-width: $desktop-lower-breakpoint) {
-        height: 400px;
-      }
-    }
-  }
-  &-section2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     gap: 24px;
-    &-img {
-      height: 144px;
-      width: 100%;
-      @media(min-width: $tablet-lower-breakpoint) {
-        max-width: 45%;
-      }
-      height: 250px;
-      object-fit: cover;
+    @media(min-width: $tablet-upper-breakpoint) {
+      width: 40%;
+    }
+    &-title, &-location {
+      font-size: $h2-font-size;
+    }
+    &-location {
+      color: $gray;
     }
     &-description {
       font-size: $body-font-size;
-      @media(min-width: $tablet-lower-breakpoint) {
-        max-width: 50%;
-      }
-      @media(min-width: $desktop-upper-breakpoint) {
-        font-size: 20px
-      }
+      margin-bottom: 24px;
     }
   }
-  &-section3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 24px;
-    &-img {
-      height: 144px;
-      width: 100%;
-      @media(min-width: $tablet-lower-breakpoint) {
-        max-width: 45%;
-      }
-      height: 250px;
-      object-fit: cover;
-    }
-    &-description {
-      font-size: $body-font-size;
-      @media(min-width: $tablet-lower-breakpoint) {
-        max-width: 50%;
-      }
-      @media(min-width: $desktop-upper-breakpoint) {
-        font-size: 20px
-      }
-    }
-    @media(min-width: 600px) {
-      flex-direction: row-reverse;
+  img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    @media(min-width: $tablet-upper-breakpoint) {
+      width: 50%;
     }
   }
 }

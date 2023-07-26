@@ -54,9 +54,13 @@ const projectStore = useProjectStore();
   &-services {
     width: 100%;
     p {
-      text-align: center;
+      margin-top: 32px;
+      margin-bottom: 24px;
       font-size: $h2-font-size;
-      margin-bottom: 36px;
+      color: $white;
+      @media(min-width: $tablet-lower-breakpoint ) {
+      font-size: $h1-font-size;
+      }
       span {
         color: $yellow;
       }

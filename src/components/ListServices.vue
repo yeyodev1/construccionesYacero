@@ -38,15 +38,22 @@ const projectStore = useProjectStore()
   color: saddlebrown;
 }
 div {
+  max-width: 1000px;
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 24px;
+  @media(min-width: $tablet-lower-breakpoint ) {
+    justify-content: left;
+  }
   .container {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
+  @media(min-width: $tablet-lower-breakpoint ) {
+    width: 40%;
+  }
   &-list {
     display: flex;
     list-style-type: none;
@@ -56,11 +63,11 @@ div {
     padding: 0;
 
     li {
-      text-align: center;
+      text-align: left;
     }
     &::before {
       content: "•";
-      color: $yellow;
+      color: $white;
     }
   }
 }

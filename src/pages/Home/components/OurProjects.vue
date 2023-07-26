@@ -73,7 +73,7 @@ const projectStore = useProjectStore();
     scrollbar-color: $yellow $gray;
     border-radius: 8px;
 
-    @media(min-width: 425px) {
+    @media(min-width: $mobile-upper-breakpoint) {
       flex-direction: row;
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -84,9 +84,9 @@ const projectStore = useProjectStore();
       }
       img {
         width: 100%;
-        @media(min-width: 425px) {
+        @media(min-width: $mobile-upper-breakpoint) {
           width: 250px;
-    }
+        }
       }
       &-title {
         font-size: $body-font-size;

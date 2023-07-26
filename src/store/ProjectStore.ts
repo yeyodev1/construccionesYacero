@@ -31,7 +31,7 @@ export const useProjectStore = defineStore('useProjectStore', {
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
         id: '1-houses',
-        location: 'La casa de tu mama'
+        location: 'Urdesa central'
       },
       {
         images: [
@@ -45,7 +45,7 @@ export const useProjectStore = defineStore('useProjectStore', {
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
         id: '1-houses',
-        location: 'La casa de tu mama'
+        location: 'Urdesa central'
       },
       {
         images: [
@@ -59,7 +59,7 @@ export const useProjectStore = defineStore('useProjectStore', {
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
         id: '1-houses',
-        location: 'La casa de tu mama'
+        location: 'Urdesa central'
       },
       {
         images: [
@@ -73,7 +73,7 @@ export const useProjectStore = defineStore('useProjectStore', {
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
         id: '1-houses',
-        location: 'La casa de tu mama'
+        location: 'Urdesa central'
       },
       {
         images: [
@@ -87,7 +87,7 @@ export const useProjectStore = defineStore('useProjectStore', {
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
         id: '1-houses',
-        location: 'La casa de tu mama'
+        location: 'Urdesa central'
       },
     ],
     services: [

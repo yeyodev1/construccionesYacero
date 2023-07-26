@@ -17,7 +17,8 @@ const projectStore = useProjectStore();
         :key="index">
         <router-link :to="`/projects/${project.id}`">
           <img :src="project.images[0]">
-          <p>{{ project.title }}</p>
+          <p class="container-section-images-title">{{ project.title }}</p>
+          <p class="container-section-images-location">{{ project.location }}</p>
         </router-link>
       </div>
     </div>
@@ -30,6 +31,7 @@ const projectStore = useProjectStore();
   margin: 0 auto;
   padding: 20px;
   margin-bottom: 40px;
+  position: relative;
   &-h3 {
     font-family: $font;
     color: $white;
@@ -43,34 +45,57 @@ const projectStore = useProjectStore();
     }
   }
   &-section {
-    display: flex;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     gap: 24px;
-    justify-content: center;
+    padding-bottom: 24px;
+    &::-webkit-scrollbar {
+      height: 8px;
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $gray;
+      border-radius: 8px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $yellow;
+      border-radius: 8px;
+
+    }
+
+    // to Firefox
+    scrollbar-color: $yellow $gray;
+    border-radius: 8px;
+
+    @media(min-width: 425px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
     &-images {
-      width: 100%;
-      position: relative;
-      @media (min-width: $tablet-lower-breakpoint) {
-        width: 45%;
+      a {
+        text-decoration: none;
       }
       img {
         width: 100%;
-        height: 100%;
-        filter: brightness(0.5)
+        @media(min-width: 425px) {
+          width: 250px;
+    }
       }
-      p {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: $sizeLarge;
-        font-weight: 500;
-        background: rgba(200, 225, 225, 0.6);
-        padding: 8px;
-        border-radius: 8px;
+      &-title {
+        font-size: $body-font-size;
+        margin-top: 10px;
+        margin-bottom: 4px;
+      }
+      &-location {
+        color: $gray;
+        font-size: $body-font-size;
       }
     }
   }

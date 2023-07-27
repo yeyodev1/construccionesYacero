@@ -1,6 +1,6 @@
 <script setup>
 import CallToAction from '@/components/CallToAction.vue';
-import galpon from '@/assets/projects/galpon-fuera.jpg';
+import galpon from '@/assets/heroImage.png';
 
 const details = [
   {
@@ -104,7 +104,7 @@ const details = [
     &-image {
       height: 284px;
       object-fit: cover;
-      object-position: top center;
+      object-position: center;
       width: 100%;
       @media (min-width: $tablet-lower-breakpoint) {
         height: 264px;

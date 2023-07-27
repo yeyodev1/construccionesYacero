@@ -1,5 +1,5 @@
 <script setup>
-import CallToAction from '@/components/CallToAction.vue'
+import CallToAction from '@/components/CallToAction.vue';
 import galpon from '@/assets/projects/galpon-fuera.jpg';
 
 const details = [

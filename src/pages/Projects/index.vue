@@ -70,7 +70,6 @@ const projectStore = useProjectStore();
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 24px;
     padding-bottom: 24px;
@@ -84,7 +83,9 @@ const projectStore = useProjectStore();
         text-decoration: none;
       }
       img {
+        height: 170px;
         width: 100%;
+        object-fit: cover;
       }
       &-title {
         font-size: $body-font-size;

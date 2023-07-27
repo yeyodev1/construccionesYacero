@@ -32,7 +32,7 @@ const details = [
         <p class="container-section2-details2-p2">Contamos con más de 30 años de experiencia en proyectos, somos tu elección segura. Nuestro compromiso con la excelencia se refleja en cada construcción que realizamos. Confía en nosotros para llevar tus proyectos a un nivel superior</p>
       </div>  
         <img 
-        src="/src/assets/man-in-work.png"
+        src="@/assets/man-in-work.png"
         alt="" 
         class="container-section2-image2"
         >

@@ -6,14 +6,9 @@ import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
 import casaPlaya from '@/assets/projects/casaPlaya.png';
 import casa from '@/assets/projects/casa.png';
 
-import contenedor from '@/assets/projects/contenedor.png';
-import porton from '@/assets/projects/porton.png';
-import galpon from '@/assets/services/galpon.png';
 
 interface RootState {
   projects: Project[],
-  services: Service[],
-  services2: Service[],
 }
 
 export const useProjectStore = defineStore('useProjectStore', {
@@ -90,40 +85,6 @@ export const useProjectStore = defineStore('useProjectStore', {
         location: 'Urdesa central'
       },
     ],
-    services: [
-      {
-        service: 'Instalaciones Sanitarias'
-      },
-      {
-        service: 'Acabados finales'
-      },
-      {
-        service: 'Cimentaciones'
-      },
-      {
-        service: 'Empacadoras'
-      },
-      {
-        service: 'Paredes'
-      },
-    ],
-    services2: [
-      {
-        service: 'Sistemas contra incendio'
-      },
-      {
-        service: 'Estaciones de bombeo'
-      },
-      {
-        service: 'Retocamiento'
-      },
-      {
-        service: 'Cisternas'
-      },
-      {
-        service: 'Vivienda'
-      },
-    ]
   }),
 
 })

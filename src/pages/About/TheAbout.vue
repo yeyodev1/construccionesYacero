@@ -20,7 +20,7 @@ const details = [
         <p class="container-section-details-p">Líderes en construcción. Equipo técnico y obrero calificado con experiencia en diseño arquitectónico y cálculos estructurales. Fabricamos estructuras de calidad siguiendo estándares y normas. Seguridad y excelencia en cada proyecto. Confía en nosotros para hacer realidad tus proyectos constructivos.</p>
       </div>  
         <img 
-        src="/src/assets/projects/galpon-dentro.jpg"
+        src="@/assets/projects/galpon-dentro.jpg"
         alt=""
         class="container-section-image"
         >

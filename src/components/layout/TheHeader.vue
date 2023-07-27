@@ -23,13 +23,6 @@ const buttons = [
   },
 ];
 
-const scrollToServices = () => {
-	const element = document.getElementById('services');
-	if (element) {
-		element.scrollIntoView({behavior: 'smooth'})
-	}
-}
-
 function toggleMenu() {
 	menuStore.toggleMenu();
 }

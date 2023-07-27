@@ -2,9 +2,6 @@ import { defineStore } from 'pinia';
 
 import type { Project } from '@/typings/Project';
 
-import casaPlaya from '@/assets/projects/casaPlaya.png';
-import casa from '@/assets/projects/casa.png';
-
 import fachadaSika from '@/assets/projects/FachadaSika.jpg';
 import portonSika from '@/assets/projects/portonSika.jpg';
 

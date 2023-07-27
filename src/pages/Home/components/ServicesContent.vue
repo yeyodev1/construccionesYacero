@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import galpon from '@/assets/services/galpon.png';
-import terraza from '@/assets/services/terraza.png';
+import galpon from '@/assets/projects/galponSika.jpg';
+import gym from '@/assets/projects/gym.jpg';
 import banio from '@/assets/services/baño.png';
 import planos from '@/assets/services/planos.png';
 import asesoria from '@/assets/services/asesoria.png';
@@ -13,7 +13,7 @@ const services = [
     service: 'Estructuras'
   },
   {
-    src: terraza,
+    src: gym,
     service: 'Construcciones'
   },
   {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ListServices from './components/ListServices.vue';
+import ListServices from '@/pages/Projects/components/ListServices.vue';
 import useProjectStore from '@/store/ProjectStore';
 
 const projectStore = useProjectStore();

@@ -18,7 +18,7 @@ import ServicesContent from '@/pages/Home/components/ServicesContent.vue';
       </p>
     <div class="section-detail-container">
         <img 
-        src="@/assets/projects/baranda.png" 
+        src="@/assets/projects/galpon-dentro.jpg" 
         alt=""
         class="imagen1"
         >

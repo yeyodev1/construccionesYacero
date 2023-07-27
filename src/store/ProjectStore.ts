@@ -2,10 +2,22 @@ import { defineStore } from 'pinia';
 
 import type { Project } from '@/typings/Project';
 
-import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
 import casaPlaya from '@/assets/projects/casaPlaya.png';
 import casa from '@/assets/projects/casa.png';
 
+import fachadaSika from '@/assets/projects/FachadaSika.jpg';
+import portonSika from '@/assets/projects/portonSika.jpg';
+
+import galponCacao from '@/assets/projects/Clasificadora.jpg';
+import entradaCacao from '@/assets/projects/PortonMCCH.jpg';
+
+import fachadaPrincipal from '@/assets/projects/Fachada-principal.jpg';
+import fachadaLateral from '@/assets/projects/Fachada-lateral.jpg';
+import fachadaPosterior from '@/assets/projects/fachadaPosterior.png';
+
+import fundation from '@/assets/projects/Fundacion.jpg';
+
+import edificioOlmary from '@/assets/projects/Fachada-Olmary.jpg';
 
 interface RootState {
   projects: Project[],
@@ -16,72 +28,66 @@ export const useProjectStore = defineStore('useProjectStore', {
     projects: [
       {
         images: [
-          casa,
-          fachadaPosterior,
-          casaPlaya,
+          portonSika,
+          fachadaSika,
         ],
-        title: 'Super proyecto de la muerte',
+        title: 'Sika',
         description: [
           'Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestras casas sean duraderas y atractivas. También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
-        id: '1-houses',
+        id: '1-sika',
         location: 'Urdesa central'
       },
       {
         images: [
-          casa,
-          fachadaPosterior,
-          casaPlaya,
+          galponCacao,
+          entradaCacao,
         ],
-        title: 'Super proyecto de la muerte',
+        title: 'Galpón para secado de cacao',
         description: [
           'Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestras casas sean duraderas y atractivas. También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
-        id: '1-houses',
+        id: '1-galpon',
         location: 'Urdesa central'
       },
       {
         images: [
-          casa,
+          fachadaPrincipal,
           fachadaPosterior,
-          casaPlaya,
+          fachadaLateral,
         ],
-        title: 'Super proyecto de la muerte',
+        title: 'Vivienda lago de Capeira',
         description: [
           'Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestras casas sean duraderas y atractivas. También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
-        id: '1-houses',
+        id: '1-capeira',
         location: 'Urdesa central'
       },
       {
         images: [
-          casa,
-          fachadaPosterior,
-          casaPlaya,
+          fundation,
         ],
-        title: 'Super proyecto de la muerte',
+        title: 'Fundación MCCH',
         description: [
           'Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestras casas sean duraderas y atractivas. También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
-        id: '1-houses',
+        id: '1-MCCH',
         location: 'Urdesa central'
       },
       {
         images: [
-          casa,
-          fachadaPosterior,
-          casaPlaya,
+          edificioOlmary,
         ],
-        title: 'Super proyecto de la muerte',
+        title: 'Edificio Olmary',
         description: [
           'Utilizamos materiales de alta calidad y mano de obra experta para garantizar que nuestras casas sean duraderas y atractivas. También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
           'También ofrecemos una amplia gama de opciones de personalización para que puedas crear la casa perfecta para tu familia.',
         ],
-        id: '1-houses',
+        id: '1-edificio',
         location: 'Urdesa central'
       },
     ],

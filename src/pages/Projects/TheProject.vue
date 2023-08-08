@@ -37,6 +37,23 @@ const details = [
     </div>
     <img :src="projectSelected?.images[0]" :alt="projectSelected?.title">
   </div>
+  <div class="box">
+    <img 
+      class="box-img" 
+      v-if="projectSelected?.images[1]" 
+      :src="projectSelected?.images[1]" 
+      :alt="projectSelected?.title">
+    <img 
+      class="box-img" 
+      v-if="projectSelected?.images[2]" 
+      :src="projectSelected?.images[2]" 
+      :alt="projectSelected?.title">
+    <img 
+      class="box-img" 
+      v-if="projectSelected?.images[3]" 
+      :src="projectSelected?.images[3]" 
+      :alt="projectSelected?.title">
+  </div>
   <CallToAction :details="details" />
 </template>
 
@@ -73,8 +90,26 @@ const details = [
     width: 100%;
     max-height: 350px;
     object-fit: cover;
+    border-radius: 8px;
     @media(min-width: $tablet-upper-breakpoint) {
       width: 50%;
+    }
+  }
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 24px;
+  width: 100%;
+  gap: 24px;
+  .box-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    @media(min-width: $tablet-upper-breakpoint) {
+      width: 45%;
     }
   }
 }

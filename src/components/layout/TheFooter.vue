@@ -86,7 +86,7 @@ function getYear(): number {
         <p>Copyright</p>
         <i class="fa-regular fa-copyright" />
         <p class="footer-fourth-section-details-author">
-          <a href="https://www.yeyo.dev/" target="_blank">YeyoDev {{ getYear() }}</a> - Todos los derechos reservados
+          <a href="https://www.yeyo.dev/" target="_blank">YeyoDev <i class="fa-solid fa-heart" /> {{ getYear() }}</a> - Todos los derechos reservados
         </p>
       </div>
     </div>
@@ -194,6 +194,9 @@ function getYear(): number {
           font-size: 1rem;
           color: $white;
           text-decoration: none;
+          i {
+            color: #da87b1;
+          }
         }
       }
     }

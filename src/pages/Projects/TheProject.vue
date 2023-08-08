@@ -53,6 +53,16 @@ const details = [
       v-if="projectSelected?.images[3]" 
       :src="projectSelected?.images[3]" 
       :alt="projectSelected?.title">
+    <img 
+      class="box-img" 
+      v-if="projectSelected?.images[4]" 
+      :src="projectSelected?.images[4]" 
+      :alt="projectSelected?.title">
+    <img 
+      class="box-img" 
+      v-if="projectSelected?.images[5]" 
+      :src="projectSelected?.images[5]" 
+      :alt="projectSelected?.title">
   </div>
   <CallToAction :details="details" />
 </template>

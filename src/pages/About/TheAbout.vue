@@ -22,7 +22,6 @@ const details = [
       </div>  
         <img 
         :src="galpon"
-        alt=""
         class="container-section-image"
         >
     </div>
@@ -33,7 +32,6 @@ const details = [
       </div>  
         <img 
         src="@/assets/man-in-work.png"
-        alt="" 
         class="container-section2-image2"
         >
     </div>
@@ -106,6 +104,7 @@ const details = [
       object-fit: cover;
       object-position: center;
       width: 100%;
+      border-radius: 8px;
       @media (min-width: $tablet-lower-breakpoint) {
         height: 264px;
       }
@@ -153,6 +152,7 @@ const details = [
       object-fit: cover;
       object-position: top center;
       width: 100%;
+      border-radius: 8px;
       @media (min-width: $tablet-lower-breakpoint) {
         height: 264px;
       }

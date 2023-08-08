@@ -85,6 +85,7 @@ const projectStore = useProjectStore();
       img {
         height: 170px;
         width: 100%;
+        border-radius: 8px;
         object-fit: cover;
       }
       &-title {

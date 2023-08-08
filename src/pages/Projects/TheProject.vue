@@ -70,7 +70,7 @@ const details = [
 <style lang="scss" scoped>
 .container {
   margin: 0 auto;
-  max-width: $desktop-lower-breakpoint;
+  max-width: $desktop-upper-breakpoint;
   padding: 24px;
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +83,7 @@ const details = [
     flex-direction: column;
     gap: 24px;
     @media(min-width: $tablet-upper-breakpoint) {
-      width: 40%;
+      width: 45%;
     }
     &-title, &-location {
       font-size: $h2-font-size;
@@ -102,7 +102,7 @@ const details = [
     object-fit: cover;
     border-radius: 8px;
     @media(min-width: $tablet-upper-breakpoint) {
-      width: 50%;
+      width: 45%;
     }
   }
 }
@@ -110,9 +110,14 @@ const details = [
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 24px;
+  padding: 0 24px 24px;
+  @media(min-width: $tablet-upper-breakpoint) {
+    padding-top: 24px;;
+  }
   width: 100%;
-  gap: 24px;
+  gap: 24px 5%;
+  max-width: $desktop-upper-breakpoint;
+  margin: 0 auto;
   .box-img {
     width: 100%;
     max-height: 350px;

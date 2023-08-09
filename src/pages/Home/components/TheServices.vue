@@ -18,7 +18,7 @@ import ServicesContent from '@/pages/Home/components/ServicesContent.vue';
       </p>
     <div class="section-detail-container">
         <img 
-        src="@/assets/projects/galpon-dentro.jpg" 
+        src="@/assets/projects/implastic-galpon-dentro.jpg" 
         alt=""
         class="imagen1"
         >
@@ -28,7 +28,7 @@ import ServicesContent from '@/pages/Home/components/ServicesContent.vue';
         class="imagen2"
         >
         <img 
-        src="@/assets/projects/casaPlaya.png" 
+        src="@/assets/projects/vivienda-playas.png" 
         alt=""
         class="imagen3"
         >

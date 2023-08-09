@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import galpon from '@/assets/projects/galponSika.jpg';
-import gym from '@/assets/projects/gym.jpg';
+import galpon from '@/assets/projects/sika-galpon-42mts.jpg';
+import gym from '@/assets/projects/edificio-orquideas.jpg';
 import banio from '@/assets/services/baño.png';
 import planos from '@/assets/services/planos.png';
 import asesoria from '@/assets/services/asesoria.png';

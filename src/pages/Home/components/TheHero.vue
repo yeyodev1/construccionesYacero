@@ -20,7 +20,7 @@ import CrushButton from '@nabux-crush/crush-button'
 
 <style lang="scss" scoped>
 .hero {
-  background-image: url('@/assets/projects/Fundacion.jpg');
+  background-image: url('@/assets/projects/mcch-maquita-edificio.jpg');
   background-position: center;
   max-width: $desktop-upper-breakpoint;
   background-repeat: no-repeat;

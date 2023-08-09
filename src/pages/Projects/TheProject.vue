@@ -33,35 +33,18 @@ const details = [
       <p class="container-box-location">
         {{ projectSelected?.location }}
       </p>
-      <p class="container-box-description">{{ projectSelected?.description[1] }}</p>
+      <p class="container-box-description">{{ projectSelected?.description[0] }}</p>
     </div>
     <img :src="projectSelected?.images[0]" :alt="projectSelected?.title">
   </div>
-  <div class="box">
-    <img 
-      class="box-img" 
-      v-if="projectSelected?.images[1]" 
-      :src="projectSelected?.images[1]" 
-      :alt="projectSelected?.title">
-    <img 
-      class="box-img" 
-      v-if="projectSelected?.images[2]" 
-      :src="projectSelected?.images[2]" 
-      :alt="projectSelected?.title">
-    <img 
-      class="box-img" 
-      v-if="projectSelected?.images[3]" 
-      :src="projectSelected?.images[3]" 
-      :alt="projectSelected?.title">
-    <img 
-      class="box-img" 
-      v-if="projectSelected?.images[4]" 
-      :src="projectSelected?.images[4]" 
-      :alt="projectSelected?.title">
-    <img 
-      class="box-img" 
-      v-if="projectSelected?.images[5]" 
-      :src="projectSelected?.images[5]" 
+  <div
+    v-if="projectSelected !== undefined"
+    class="box">
+    <img
+      v-for="(image, index) in projectSelected?.images.slice(1, projectSelected.images.length)"
+      class="box-img"
+      :key="index"  
+      :src="image" 
       :alt="projectSelected?.title">
   </div>
   <CallToAction :details="details" />

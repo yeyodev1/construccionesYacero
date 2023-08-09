@@ -69,7 +69,7 @@ export const useProjectStore = defineStore('useProjectStore', {
         ],
         title: 'Construccion de oficina y planta',
         description: [
-          'Oficinas administrativa, calles, interiores, estacionamientos, cuarto de transformador, bodega, área de secado, galpón calsificador, comedor',
+          'Oficinas administrativa, calles, interiores, estacionamientos, cuarto de transformador, bodega, área de secado, galpón calsificador, y comedor',
         ],
         id: '1-galpon',
         location: 'Prosperina, Guayas, Ecuador'

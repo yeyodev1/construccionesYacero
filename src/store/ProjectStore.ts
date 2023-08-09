@@ -53,7 +53,7 @@ export const useProjectStore = defineStore('useProjectStore', {
         ],
         title: 'Sika',
         description: [
-          'Remodelacion de fachada y oficina.',
+          'Remodelación de fachada y oficina.',
         ],
         id: '1-sika',
         location: 'Duran, Guayas, Ecuador'
@@ -69,7 +69,7 @@ export const useProjectStore = defineStore('useProjectStore', {
         ],
         title: 'Construccion de oficina y planta',
         description: [
-          'Oficinas administrativa, calles, interiores, estacionamientos, cuarto de transformador, bodega, area de secado, galpon calsificador, comedor',
+          'Oficinas administrativa, calles, interiores, estacionamientos, cuarto de transformador, bodega, área de secado, galpón calsificador, comedor',
         ],
         id: '1-galpon',
         location: 'Prosperina, Guayas, Ecuador'
@@ -111,7 +111,7 @@ export const useProjectStore = defineStore('useProjectStore', {
         ],
         title: 'Implastic',
         description: [
-          'Galpon de 32 mts., planta industrial fabricacion de plasticos.',
+          'Galpón de 32 mts., planta industrial fabricación de plasticos.',
         ],
         id: 'implastic',
         location: 'Km. 26 via Daule, Guayas, Ecuador'

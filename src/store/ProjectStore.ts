@@ -67,7 +67,7 @@ export const useProjectStore = defineStore('useProjectStore', {
           maquitaPrincipal,
           maquitaTransformador,
         ],
-        title: 'Construccion de oficina y planta',
+        title: 'Construcción de oficina y planta',
         description: [
           'Oficinas administrativa, calles, interiores, estacionamientos, cuarto de transformador, bodega, área de secado, galpón calsificador, y comedor',
         ],

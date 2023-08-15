@@ -8,7 +8,7 @@ const projectStore = useProjectStore();
 <template>
   <div class="container">
     <p class="container-title">
-      Nuestros <span>proyectos</span>
+      Nuestros <span>Proyectos</span>
     </p>
     <div class="super-container">
       <div
@@ -25,9 +25,6 @@ const projectStore = useProjectStore();
       </router-link>
     </div>
     <div class="container-services">
-      <p>
-        Nuestros <span> servicios </span> 
-      </p>
       <ListServices />
     </div>
     </div>
@@ -53,18 +50,6 @@ const projectStore = useProjectStore();
   }
   &-services {
     width: 100%;
-    p {
-      margin-top: 32px;
-      margin-bottom: 24px;
-      font-size: $h2-font-size;
-      color: $white;
-      @media(min-width: $tablet-lower-breakpoint ) {
-      font-size: $h1-font-size;
-      }
-      span {
-        color: $yellow;
-      }
-    }
   }
   .super-container {
     width: 100%;

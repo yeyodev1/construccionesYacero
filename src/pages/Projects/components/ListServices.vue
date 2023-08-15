@@ -27,6 +27,12 @@ const services = [
   {
     service: 'Vivienda'
   },
+  {
+    service: 'Sistemas recolectores en caso de derrame químico'
+  },
+  {
+    service: 'Plintos, zapatos corridas o losa radical'
+  },
 ]
 
 const materials = [
@@ -96,7 +102,7 @@ const materials = [
       class="container"
       >
       <ul
-        v-for="(service, index) in services.slice(0, 5)"
+        v-for="(service, index) in services.slice(0, Math.ceil(services.length / 2))"
         :key="index"
         class="container-list">
         <li>
@@ -109,7 +115,7 @@ const materials = [
       >
       <ul
         class="container-list"
-        v-for="(service, index) in services.slice(5, 10)"
+        v-for="(service, index) in services.slice(Math.ceil(services.length / 2))"
         :key="index">
         <li>
           {{ service.service }}

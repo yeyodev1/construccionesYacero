@@ -3,11 +3,11 @@
 const icons = [
   
   {
-    link: 'https://www.facebook.com/construccionesyacero',
+    link: 'https://www.facebook.com/construccionesyaceroec/',
     iconClass: '<i class="fa-brands fa-facebook" />'
   },
   {
-    link: 'https://www.instagram.com/construccionesyacero/',
+    link: 'https://www.instagram.com/construccionesyacero.ec/',
     iconClass: '<i class="fa-brands fa-instagram" />'
   },
   {

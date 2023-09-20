@@ -38,7 +38,7 @@ const props = defineProps({
     margin-bottom: 0;
   }
   &-title {
-    color: $white;
+    color: $black;
     font-family: $font;
     font-weight: 500;
     text-transform: uppercase;

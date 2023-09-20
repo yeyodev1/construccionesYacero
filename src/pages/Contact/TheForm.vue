@@ -103,28 +103,28 @@ async function sendEmail() {
     <h3 class="form-title">¿Nos ponemos en <span>contacto</span>?</h3>
     <p class="form-p">¡Completa el formulario y construyamos juntos tus sueños! En Construcciones y Acero, convertimos tus ideas en realidades estructurales.</p>
     <form class="form-container">
-      <CrushTextField
-        v-model="form.name"  
-        class="form-container-form"
-        label="Nombres y apellidos" 
-        placeholder="Diego Reyes"
-        :valid-rules="rules.validateName"
-      />
-      <CrushTextField
+        <CrushTextField
+          v-model="form.name"  
+          class="form-container-form"
+          label="Nombres y apellidos" 
+          placeholder="Diego Reyes"
+          :valid-rules="rules.validateName"
+        />
+        <CrushTextField
         v-model="form.phone"  
         class="form-container-form"
         label="Número celular" 
-        type="number"
-        placeholder="0945454545"
-        :valid-rules="rules.validateNumber"
-      />
-      <CrushTextField
-        v-model="form.email"  
-        class="form-container-form"
-        label="Correo" 
-        placeholder="diego@dominio.com"
-        :valid-rules="rules.validateEmail"
-      />
+          type="number"
+          placeholder="0945454545"
+          :valid-rules="rules.validateNumber"
+        />
+        <CrushTextField
+          v-model="form.email"  
+          class="form-container-form"
+          label="Correo" 
+          placeholder="diego@dominio.com"
+          :valid-rules="rules.validateEmail"
+        />
       <label 
         for=""
         class="form-container-label"  
@@ -181,7 +181,7 @@ async function sendEmail() {
   gap: 8px;
   &-title {
     font-family: $font;
-    color: $white;
+    color: $black;
     font-weight: 500;
     font-size: $sizeLarge;
     text-align: center;
@@ -203,8 +203,12 @@ async function sendEmail() {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: space-between;
+    :deep( .form-container-form .valid span) {
+    color: $black;
+    }
     &-form {
       font-family: $font;
+      color: $black;
       width: 100%;
       ::placeholder {
         font-family: $font;
@@ -212,9 +216,11 @@ async function sendEmail() {
       :deep(.input-container.active) {
         border-color: $yellow;
         font-family: $font;
+        color: $black;
       }
       :deep(.input-container .crush-text-field-input) {
         font-family: $font;
+        color: $black;
       }
       @media(min-width: $tablet-upper-breakpoint) {
         width: 40%;
@@ -225,7 +231,7 @@ async function sendEmail() {
       font-weight: bold;
       display: flex;
       flex-direction: column;
-      color: $white;
+      color: $black;
       gap: 12px;
       font-weight: bold;
       @media (min-width: $tablet-upper-breakpoint) {
@@ -235,16 +241,16 @@ async function sendEmail() {
         font-family: $font;
         font-size: $size;
         font-weight: 500;
-        color: $white;
+        color: #afaab5;
         background-color: transparent;
         appearance: none;
         outline: none;
-        border: 1px solid $white;
+        border: 1px solid #afaab5;
         padding: 8px;
         border-radius: 8px;
         .custom-option {
-          background: $black;
-          color: $white;
+          background: $white;
+          color: $black;
           font-family: $font;
         }
       }
@@ -254,8 +260,18 @@ async function sendEmail() {
       margin-bottom: 24px ;
       font-family: $font;
       font-weight: bold;
-      :deep(.crush-textarea-container .textarea){
+      :deep(.crush-textarea-label-text){
         font-family: $font;
+        color: $black;
+        ::placeholder {
+          color: $black;
+        }
+      }
+      :deep(.crush-textarea-container .textarea) {
+        color: $black;
+      }
+      :deep(.crush-textarea .form-container-text) {
+        background-color: red;
       }
       :deep(.crush-textarea-container.is-focused) {
         border-color: $yellow;
@@ -278,4 +294,12 @@ async function sendEmail() {
     }
   }
 }
+// .hola {
+//   :deep( .form-container-form .valid span) {
+//     color: $black;
+//     :deep() {
+//       background-color: aqua;
+//     }
+//   }
+// }
 </style>

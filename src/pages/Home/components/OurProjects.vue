@@ -34,7 +34,7 @@ const projectStore = useProjectStore();
   position: relative;
   &-h3 {
     font-family: $font;
-    color: $white;
+    color: $black;
     font-size: 1.5rem;
     margin-bottom: 36px ;
     @media (min-width: $tablet-lower-breakpoint) {

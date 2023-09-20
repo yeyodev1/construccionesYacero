@@ -83,11 +83,13 @@ function toggleMenu() {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				color: $black;
 			}
 			a &-button {
 				border: none;
 				font-family: $font;
 				font-weight: 700;
+				color: $black;
 				&:hover {
 					border: none;
 					font-weight: 700;

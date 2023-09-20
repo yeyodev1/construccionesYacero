@@ -159,7 +159,7 @@ const materials = [
   width: 100%;
   margin: 32px 0;
   font-size: $h2-font-size;
-  color: $white;
+  color: $black;
   @media(min-width: $tablet-lower-breakpoint ) {
   font-size: $h1-font-size;
   }
@@ -188,7 +188,7 @@ div {
     display: flex;
     list-style-type: none;
     gap: 4px;
-    color: $white;
+    color: $black;
     font-size: $h2-font-size;
     padding: 0;
 
@@ -197,7 +197,7 @@ div {
     }
     &::before {
       content: "•";
-      color: $white;
+      color: $black;
     }
   }
 }

@@ -64,6 +64,7 @@ const services = [
     text-transform: uppercase;
     font-size: $sizeLarge;
     margin-bottom: 36px;
+    color: $black;
     span {
       color: $yellow;
     }
@@ -91,6 +92,7 @@ const services = [
         right: 0;
         left: 0;
         width: 100%;
+        color: $black;
       }
       img {
         width: 258px;
@@ -111,6 +113,7 @@ const services = [
         font-weight: 500;
         background: rgba(200, 225, 225, 0.6);
         padding: 8px;
+        color: $black;
         border-radius: 8px;
       }
     }

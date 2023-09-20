@@ -47,18 +47,12 @@ const services = [
     service: 'Permisos de contrucción'
   },
 ]
-
-function getYear(): number {
-  const date = new Date();
-  const currentYear = date.getFullYear();
-  return currentYear;
-}
 </script>
 
 <template>
   <footer class="footer">
     <div class="footer-first-section">
-      <img src="@/assets/construccionesyacero-logo.png" alt="construcciones y acero">
+      <img class="footer-first-section-img" src="@/assets/construccionesyacero-logo.png" alt="construcciones y acero">
       <div class="footer-first-section-social">
         <p class="footer-first-section-social-cta">Siguenos en redes</p>
         <div class="social-media">
@@ -79,15 +73,6 @@ function getYear(): number {
       <p class="footer-third-section-p">Servicios</p>
       <div v-for="(service, index) in services" :key="index" class="footer-third-section-services-container">
         <p> {{ service.service }}</p>
-      </div>
-    </div>
-    <div class="footer-fourth-section">
-      <div class="footer-fourth-section-details">
-        <p>Copyright</p>
-        <i class="fa-regular fa-copyright" />
-        <p class="footer-fourth-section-details-author">
-          <a href="https://www.yeyo.dev/" target="_blank">YeyoDev <i class="fa-solid fa-heart" /> {{ getYear() }}</a> - Todos los derechos reservados
-        </p>
       </div>
     </div>
   </footer>
@@ -114,6 +99,10 @@ function getYear(): number {
   }
   &-first-section {
     margin-bottom: 48px;
+    &-img {
+      width: 120px;
+      height: 40px;
+    }
     &-social {
       margin-top: 24px;
       width: 100%;
@@ -155,7 +144,7 @@ function getYear(): number {
       gap: 8px;
       margin-bottom: 12px;
       .text {
-        color: $white;
+        color: $black;
       }
     }
     & a:last-child {
@@ -174,30 +163,6 @@ function getYear(): number {
     &-services-container {
       p {
         font-size: 1rem;
-      }
-    }
-  }
-  &-fourth-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &-details {
-      color: $white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      p {
-        font-size: 1rem;
-        a {
-          font-size: 1rem;
-          color: $white;
-          text-decoration: none;
-          i {
-            color: #da87b1;
-          }
-        }
       }
     }
   }

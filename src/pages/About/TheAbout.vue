@@ -76,6 +76,7 @@ const details = [
         hyphens: auto;
         word-break: break-word;
         margin-bottom: 36px;
+        color: $black;
         @media (min-width: $tablet-lower-breakpoint) {
           font-size: $sizeExtraLarge;
         } 

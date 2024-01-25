@@ -208,7 +208,7 @@ async function sendEmail() {
     }
     &-form {
       font-family: $font;
-      color: $black;
+      color: $white;
       width: 100%;
       ::placeholder {
         font-family: $font;
@@ -216,11 +216,11 @@ async function sendEmail() {
       :deep(.input-container.active) {
         border-color: $yellow;
         font-family: $font;
-        color: $black;
+        color: $white;
       }
       :deep(.input-container .crush-text-field-input) {
         font-family: $font;
-        color: $black;
+        color: $white;
       }
       @media(min-width: $tablet-upper-breakpoint) {
         width: 40%;
@@ -268,7 +268,7 @@ async function sendEmail() {
         }
       }
       :deep(.crush-textarea-container .textarea) {
-        color: $black;
+        color: $white;
       }
       :deep(.crush-textarea .form-container-text) {
         background-color: red;

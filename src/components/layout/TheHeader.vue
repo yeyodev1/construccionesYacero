@@ -89,7 +89,7 @@ function toggleMenu() {
 				border: none;
 				font-family: $font;
 				font-weight: 700;
-				color: $black;
+				color: $white;
 				&:hover {
 					border: none;
 					font-weight: 700;

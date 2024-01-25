@@ -2,6 +2,7 @@
 import TheHeader from "./components/layout/TheHeader.vue";
 import TheFooter from "./components/layout/TheFooter.vue";
 import TheMenu from "./components/layout/TheMenu.vue";
+import YeyoTrademark from "./components/YeyoTrademark.vue";
 </script>
 
 <template>
@@ -12,13 +13,14 @@ import TheMenu from "./components/layout/TheMenu.vue";
 		</div>
 		<TheMenu />
 		<TheFooter />
+		<YeyoTrademark />
 	</div>
 </template>
 
 <style lang="scss">
 
 .app-container {
-	background-color: $white;
+	background-color: $black;
 	min-height: 100vh;
 	width: 100%;
 	display: flex;

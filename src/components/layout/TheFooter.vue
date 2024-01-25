@@ -144,7 +144,7 @@ const services = [
       gap: 8px;
       margin-bottom: 12px;
       .text {
-        color: $black;
+        color: $white;
       }
     }
     & a:last-child {

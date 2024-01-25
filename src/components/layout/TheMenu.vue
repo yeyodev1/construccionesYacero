@@ -61,12 +61,12 @@ const menuStore = useMenuStore();
   transition-duration: 300ms;
   z-index: 30;
   right: 100%;
-  background-color: $white;
+  background-color: $black;
   &-close {
     display: flex;
     justify-content: end;
     &-button {
-      color: $black;
+      color: $white;
       background: transparent;
       padding: 16px;
       border: none;
@@ -79,7 +79,7 @@ const menuStore = useMenuStore();
     gap: 12px;
     &-link {
       &-button {
-        color: $black;
+        color: $white;
         width: 100%;
         text-align: left;
         border: none;
